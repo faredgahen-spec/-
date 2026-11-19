@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+
+<html dir="rtl" lang="ar"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"surface-container":"#eaedff","surface-container-lowest":"#ffffff","primary":"#006194","secondary-fixed-dim":"#4edea3","on-tertiary-container":"#f3fffc","primary-fixed-dim":"#93ccff","outline":"#707881","surface-container-low":"#f2f3ff","inverse-primary":"#93ccff","error":"#ba1a1a","background":"#faf8ff","on-secondary":"#ffffff","inverse-on-surface":"#eef0ff","secondary":"#006c49","on-primary-fixed":"#001d31","on-background":"#131b2e","primary-fixed":"#cce5ff","tertiary-fixed-dim":"#80d5cb","secondary-container":"#6cf8bb","on-tertiary-fixed":"#00201d","on-error":"#ffffff","surface-bright":"#faf8ff","error-container":"#ffdad6","tertiary-container":"#248279","inverse-surface":"#283044","surface-container-high":"#e2e7ff","surface-container-highest":"#dae2fd","secondary-fixed":"#6ffbbe","surface-tint":"#006398","outline-variant":"#bfc7d2","on-surface-variant":"#3f4850","on-tertiary":"#ffffff","on-error-container":"#93000a","on-secondary-container":"#00714d","tertiary-fixed":"#9cf2e8","on-secondary-fixed":"#002113","on-primary-fixed-variant":"#004b73","tertiary":"#006860","surface":"#faf8ff","on-surface":"#131b2e","on-secondary-fixed-variant":"#005236","surface-variant":"#dae2fd","on-tertiary-fixed-variant":"#00504a","surface-dim":"#d2d9f4","primary-container":"#007bb9","on-primary-container":"#fdfcff","on-primary":"#ffffff"},borderRadius:{DEFAULT:"0.125rem",lg:"0.25rem",xl:"0.5rem",full:"0.75rem"},spacing:{"space-xs":"0.25rem","gutter-desktop":"1.5rem","gutter":"1rem","space-sm":"0.5rem","margin":"1rem","space-2xl":"3rem","margin-desktop":"2rem","space-xl":"2rem","space-lg":"1.5rem","space-md":"1rem"},fontFamily:{"pos-keypad":["Plus Jakarta Sans"],"body-lg":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"price-display":["Plus Jakarta Sans"],"label-sm":["Plus Jakarta Sans"],"label-lg":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"],"body-md":["Plus Jakarta Sans"],"label-md":["Plus Jakarta Sans"],"headline-xl":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"body-sm":["Plus Jakarta Sans"]},fontSize:{"pos-keypad":["20px",{lineHeight:"24px",fontWeight:"700"}],"body-lg":["16px",{lineHeight:"24px",fontWeight:"500"}],"headline-md":["20px",{lineHeight:"28px",fontWeight:"600"}],"price-display":["28px",{lineHeight:"32px",letterSpacing:"-0.02em",fontWeight:"800"}],"label-sm":["10px",{lineHeight:"14px",letterSpacing:"0.05em",fontWeight:"700"}],"label-lg":["14px",{lineHeight:"20px",letterSpacing:"0.01em",fontWeight:"600"}],"headline-sm":["18px",{lineHeight:"24px",fontWeight:"600"}],"body-md":["14px",{lineHeight:"20px",fontWeight:"400"}],"label-md":["12px",{lineHeight:"16px",letterSpacing:"0.02em",fontWeight:"600"}],"headline-xl":["32px",{lineHeight:"40px",letterSpacing:"-0.02em",fontWeight:"700"}],"headline-lg":["24px",{lineHeight:"32px",letterSpacing:"-0.01em",fontWeight:"700"}],"body-sm":["12px",{lineHeight:"16px",fontWeight:"400"}]}}}};</script></head><body class="bg-background font-body-md text-on-surface antialiased selection:bg-primary selection:text-on-primary"><aside class="fixed right-0 top-0 h-full w-72 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between select-none">
+      <div class="px-space-md py-2 border-b border-surface-container flex items-center justify-between text-xs bg-primary/5">
+        <a href="../index.html" class="flex items-center gap-1 text-primary hover:underline font-bold">
+          <span class="material-symbols-outlined text-sm">arrow_forward</span>
+          الرجوع للمنصة الرئيسية
+        </a>
+        <a href="login.html" class="flex items-center gap-1 text-on-surface-variant hover:text-primary">
+          <span class="material-symbols-outlined text-sm">account_circle</span>
+          تسجيل الدخول
+        </a>
+      </div>
+    <div class="flex flex-col"><div class="h-16 px-space-lg flex items-center gap-space-sm bg-surface-container-low"><div class="w-10 h-10 rounded-xl bg-primary flex items-center justify-center text-on-primary shadow-sm"><span class="material-symbols-outlined text-headline-sm">local_pharmacy</span></div><div class="flex flex-col leading-tight"><span class="font-headline-sm text-headline-sm text-primary tracking-tight font-bold">صيدلية فتحي عصام</span><span class="font-label-sm text-label-sm text-on-surface-variant">منظومة الصرف السريري الذكي</span></div></div><div class="px-space-md py-space-sm"><div class="bg-surface-container px-space-sm py-space-xs rounded-lg flex items-center justify-between"><span class="font-label-sm text-label-sm text-on-surface-variant">رمز نقطة البيع: POS-01</span><span class="font-label-sm text-label-sm text-secondary font-bold flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-secondary inline-block animate-pulse"></span>نشط الآن</span></div></div><nav class="flex flex-col gap-space-xs px-space-md mt-space-xs" data-active-classes="bg-primary text-on-primary font-bold shadow-sm"><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="pos-sales" href="index.html"><span class="material-symbols-outlined text-headline-sm">point_of_sale</span><span class="font-label-lg text-label-lg">كاشير نقطة البيع</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="medications-and-stock" href="mobile-pos.html"><span class="material-symbols-outlined text-headline-sm">medication</span><span class="font-label-lg text-label-lg">قاعدة بيانات الأدوية والمخزون</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="customers-and-prescriptions" href="customers.html"><span class="material-symbols-outlined text-headline-sm">clinical_notes</span><span class="font-label-lg text-label-lg">إدارة العملاء والروشتات</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="invoices-and-history" href="mobile-checkout.html"><span class="material-symbols-outlined text-headline-sm">receipt_long</span><span class="font-label-lg text-label-lg">سجل الفواتير والمبيعات</span></a><a aria-current="page" class="flex items-center gap-space-sm px-space-md py-space-sm rounded-xl transition-all bg-primary text-on-primary font-bold shadow-sm" data-path="payments-and-ledger" href="payments.html"><span class="material-symbols-outlined text-headline-sm">account_balance_wallet</span><span class="font-label-lg text-label-lg">التسويات المالية والمحافظ</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="settings" href="login.html"><span class="material-symbols-outlined text-headline-sm">print</span><span class="font-label-lg text-label-lg">إعدادات وطابعة الإيصالات</span></a></nav></div><div class="p-space-md flex flex-col gap-space-xs bg-surface-container-low"><div class="bg-surface-container-lowest p-space-sm rounded-xl shadow-[0_1px_3px_0_rgba(15,23,42,0.04)] flex items-center justify-between"><div class="flex flex-col"><span class="font-label-sm text-label-sm text-on-surface-variant">إجمالي مبيعات الوردية</span><span class="font-headline-sm text-headline-sm text-primary font-bold">14,850.50 ج.م</span></div><span class="material-symbols-outlined text-tertiary">monitoring</span></div><div class="flex items-center justify-between text-on-surface-variant px-space-xs"><span class="font-label-sm text-label-sm">الإصدار v4.8 سريري</span><span class="font-label-sm text-label-sm font-bold text-secondary">حماية الأخطاء مفعلة</span></div></div></aside><div class="pr-72"><header class="fixed top-0 right-72 left-0 h-16 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 px-space-lg flex items-center justify-between"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs bg-surface-container px-space-sm py-1.5 rounded-lg"><span class="material-symbols-outlined text-label-lg text-primary">storefront</span><span class="font-label-md text-label-md text-on-surface font-semibold">فرع النزهة الرئيسي - القاهرة</span></div><div class="flex items-center gap-space-xs bg-surface-container-low px-space-sm py-1.5 rounded-lg"><span class="w-2 h-2 rounded-full bg-secondary inline-block animate-ping"></span><span class="font-label-md text-label-md text-secondary font-bold">متصل بالسحابة والباركود</span></div><div class="hidden xl:flex items-center gap-space-xs text-on-surface-variant"><span class="font-label-sm text-label-sm bg-surface-container px-space-xs py-0.5 rounded font-bold text-on-surface">F1</span><span class="font-label-sm text-label-sm ml-space-xs">بيع جديد</span><span class="font-label-sm text-label-sm bg-surface-container px-space-xs py-0.5 rounded font-bold text-on-surface">F2</span><span class="font-label-sm text-label-sm ml-space-xs">بحث دواء</span><span class="font-label-sm text-label-sm bg-surface-container px-space-xs py-0.5 rounded font-bold text-on-surface">F9</span><span class="font-label-sm text-label-sm">دفع سريع</span></div></div><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs bg-surface-container-low px-space-sm py-1 rounded-xl text-on-surface"><span class="material-symbols-outlined text-label-lg text-tertiary">schedule</span><span class="font-label-md text-label-md font-bold">04:32:15</span><span class="font-label-sm text-label-sm text-on-surface-variant mr-1">(وردية الصباح)</span></div><button aria-label="التنبيهات السريرية" class="relative p-2 rounded-xl text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-error"></span></button><div class="flex items-center gap-space-sm pl-space-xs pr-space-sm py-1 bg-surface-container rounded-full"><div class="flex flex-col text-left items-end leading-tight pl-1"><span class="font-label-md text-label-md text-on-surface font-bold">د. فتحي عصام</span><span class="font-label-sm text-label-sm text-primary font-medium">صيدلي أول ممارس</span></div><img alt="Profile" class="w-8 h-8 rounded-full object-cover shadow-sm" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAh-lQhKwgrvlMBsjwB0_3iUwSrFZV456dselAsCn3hG_Tj3_G05Xr_9YAC7Ezy8l54p8MqsvnRC5MqsbDZN31DWgx0Dr2Mv1byR_9-qJN3lEUsO5wqtWAiydr6CFlmSQAO8RysNvYPu3krgrn4II5ApL5p_0w18ESnjKMJU_WJAFmNAF9lQ9NpKnUnlufUILjy8WAibhqrrZO8-F7GRd_jJBR529bKu8lbeCSbCAs"/></div></div></header><main class="relative pt-16 w-full min-h-screen bg-background"><div class="flex flex-col w-full p-space-md lg:p-space-lg gap-space-lg">
+<!-- Top Hero Bar: Status & Shift Reconciliation Pulse -->
+<div class="flex flex-col xl:flex-row items-stretch xl:items-center justify-between gap-space-md bg-surface-container-lowest p-space-lg rounded-xl shadow-sm">
+<div class="flex items-center gap-space-md">
+<div class="w-14 h-14 rounded-full bg-primary-fixed flex items-center justify-center text-primary shadow-sm shrink-0">
+<span class="material-symbols-outlined text-headline-lg">account_balance_wallet</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="font-headline-lg text-headline-lg text-on-surface font-extrabold tracking-tight">التسويات المالية ومطابقة الدفع المتعدد</span>
+<span class="px-space-xs py-0.5 rounded-lg bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-bold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary inline-block"></span>
+            مطابقة البنوك والمحافظ متزامنة
+          </span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-0.5">
+          متابعة لحظية لقنوات التحصيل الإلكتروني والنقدي (انستابي، فودافون كاش، POS فيزا، ونقدية الخزينة) لدعم دقة الجرد ومنع العجز.
+        </p>
+</div>
+</div>
+<!-- Quick Actions in Header -->
+<div class="flex items-center gap-space-sm flex-wrap xl:flex-nowrap">
+<div class="flex items-center gap-space-xs bg-surface-container-low px-space-md py-2 rounded-xl">
+<span class="material-symbols-outlined text-primary text-headline-sm">update</span>
+<div class="flex flex-col text-right">
+<span class="font-label-sm text-label-sm text-on-surface-variant">آخر تسوية بنكية</span>
+<span class="font-label-md text-label-md text-on-surface font-bold">منذ 3 دقائق (04:29 م)</span>
+</div>
+</div>
+<button class="h-12 px-space-md bg-surface-container hover:bg-surface-container-high text-on-surface font-label-lg text-label-lg rounded-xl flex items-center gap-space-xs transition-colors shadow-sm" onclick="triggerPosPing()" type="button">
+<span class="material-symbols-outlined text-headline-sm text-primary">point_of_sale</span>
+<span>فحص ماكينات POS</span>
+</button>
+<button class="h-12 px-space-lg bg-primary hover:bg-primary-container text-on-primary font-label-lg text-label-lg rounded-xl flex items-center gap-space-xs transition-all shadow-md" onclick="openShiftCloseModal()" type="button">
+<span class="material-symbols-outlined text-headline-sm">lock_clock</span>
+<span>تقفيل الوردية وجرد Z-Report</span>
+</button>
+</div>
+</div>
+<!-- Section 1: Daily Shift Financial Breakdown & 4 Channel Cards -->
+<div class="flex flex-col gap-space-md">
+<!-- Shift KPI Aggregate Strip -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Total Sales -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between relative overflow-hidden">
+<div class="absolute -left-3 -top-3 w-16 h-16 bg-primary-fixed/30 rounded-full blur-xl pointer-events-none"></div>
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface-variant font-bold">إجمالي مبيعات الوردية الحالية</span>
+<span class="px-space-xs py-0.5 rounded bg-primary-fixed text-primary font-label-sm text-label-sm font-bold">الوردية #142</span>
+</div>
+<div class="my-space-sm flex items-baseline gap-space-xs">
+<span class="font-price-display text-price-display text-primary font-extrabold">18,450.00</span>
+<span class="font-label-md text-label-md text-on-surface-variant font-bold">ج.م</span>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm">
+<span class="flex items-center gap-1 text-secondary font-bold">
+<span class="material-symbols-outlined text-label-md">check_circle</span>
+            84 عملية بيع ناجحة
+          </span>
+<span>متوسط السلة: 219.6 ج.م</span>
+</div>
+</div>
+<!-- Pending Verifications -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface-variant font-bold">تحويلات قيد التأكيد الفوري</span>
+<span class="w-2 h-2 rounded-full bg-secondary-fixed-dim animate-ping"></span>
+</div>
+<div class="my-space-sm flex items-baseline gap-space-xs">
+<span class="font-price-display text-price-display text-on-surface font-extrabold">0.00</span>
+<span class="font-label-md text-label-md text-on-surface-variant font-bold">ج.م معلق</span>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm">
+<span class="text-secondary font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-label-md">verified</span>
+            لا توجد مدفوعات معلقة
+          </span>
+<span class="font-label-sm text-label-sm bg-surface-container px-1.5 py-0.5 rounded">Webhook نشط</span>
+</div>
+</div>
+<!-- Cash in Drawer vs Expected -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface-variant font-bold">نقدية الدرج مع العهدة الافتتاحية</span>
+<span class="font-label-sm text-label-sm text-secondary font-bold">تطابق 100%</span>
+</div>
+<div class="my-space-sm flex items-baseline gap-space-xs">
+<span class="font-price-display text-price-display text-secondary font-extrabold">9,200.00</span>
+<span class="font-label-md text-label-md text-on-surface-variant font-bold">ج.م كاش</span>
+</div>
+<div class="flex items-center justify-between font-body-sm text-body-sm text-on-surface-variant">
+<span>8,200 مبيعات + 1,000 عهدة</span>
+<span class="text-primary font-bold">عجز: 0.00 ج.م</span>
+</div>
+</div>
+<!-- Electronic Share Ratio -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface-variant font-bold">نسبة المدفوعات غير النقدية</span>
+<span class="material-symbols-outlined text-tertiary">contactless</span>
+</div>
+<div class="my-space-sm flex items-baseline gap-space-xs">
+<span class="font-price-display text-price-display text-tertiary font-extrabold">55.5%</span>
+<span class="font-label-md text-label-md text-on-surface-variant font-bold">10,250.00 ج.م</span>
+</div>
+<div class="w-full bg-surface-container-high rounded-full h-2 overflow-hidden flex">
+<div class="bg-primary h-full" style="width: 30%" title="انستابي 30%"></div>
+<div class="bg-error h-full" style="width: 15%" title="فودافون كاش 15%"></div>
+<div class="bg-tertiary h-full" style="width: 10.5%" title="فيزا POS 10.5%"></div>
+<div class="bg-secondary h-full" style="width: 44.5%" title="كاش 44.5%"></div>
+</div>
+</div>
+</div>
+<!-- 4 Major Channel Reconciliation Cards -->
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-space-md">
+<!-- Channel 1: Cash Drawer -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between transition-all hover:shadow-md">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<div class="w-10 h-10 rounded-xl bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed">
+<span class="material-symbols-outlined text-headline-sm">payments</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface font-bold">كاش نقدي في الدرج</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">الدرج الآلي POS-01</span>
+</div>
+</div>
+<span class="px-space-xs py-0.5 rounded bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-bold">45% من المبيعات</span>
+</div>
+<div class="mt-space-sm pt-space-xs flex flex-col">
+<span class="font-price-display text-price-display text-secondary font-extrabold">8,200.00 <span class="text-headline-sm">ج.م</span></span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">38 فاتورة نقدية مباشرة</span>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded-lg flex flex-col gap-1 text-on-surface-variant font-body-sm text-body-sm mt-space-xs">
+<div class="flex justify-between items-center">
+<span>تطابق الدرج الفعلي:</span>
+<span class="font-bold text-secondary flex items-center gap-0.5">
+<span class="material-symbols-outlined text-label-sm">check_circle</span>
+                متطابق 100%
+              </span>
+</div>
+<div class="flex justify-between items-center">
+<span>فئات العملات:</span>
+<span class="font-bold text-on-surface">32 ورقة مئتين | 18 مائة</span>
+</div>
+</div>
+</div>
+<button class="w-full mt-space-md py-2.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md font-bold flex items-center justify-center gap-space-xs transition-colors" onclick="quickCashAudit()" type="button">
+<span class="material-symbols-outlined text-label-lg">inventory</span>
+<span>جرد سريع لفئات الكاش</span>
+</button>
+</div>
+<!-- Channel 2: InstaPay Instant -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between transition-all hover:shadow-md">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<div class="w-10 h-10 rounded-xl bg-primary-fixed flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-headline-sm">bolt</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface font-bold">انستابي لحظي (InstaPay)</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">الشبكة القومية للمدفوعات</span>
+</div>
+</div>
+<span class="px-space-xs py-0.5 rounded bg-primary-fixed text-primary font-label-sm text-label-sm font-bold">30% من المبيعات</span>
+</div>
+<div class="mt-space-sm pt-space-xs flex flex-col">
+<span class="font-price-display text-price-display text-primary font-extrabold">5,450.00 <span class="text-headline-sm">ج.م</span></span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">22 معاملة رقمية فورية</span>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded-lg flex flex-col gap-1 text-on-surface-variant font-body-sm text-body-sm mt-space-xs">
+<div class="flex justify-between items-center">
+<span>عنوان الدفع (IPA):</span>
+<span class="font-bold text-primary font-mono text-label-sm text-label-sm">fathy.pharmacy@instapay</span>
+</div>
+<div class="flex justify-between items-center">
+<span>البنك المستلم:</span>
+<span class="font-bold text-on-surface">البنك التجاري الدولي (CIB)</span>
+</div>
+</div>
+</div>
+<button class="w-full mt-space-md py-2.5 rounded-lg bg-primary-fixed/50 hover:bg-primary-fixed text-primary font-label-md text-label-md font-bold flex items-center justify-center gap-space-xs transition-colors" onclick="showInstaPayVerificationModal()" type="button">
+<span class="material-symbols-outlined text-label-lg">qr_code_scanner</span>
+<span>مسح QR وتأكيد الإشعار</span>
+</button>
+</div>
+<!-- Channel 3: Vodafone Cash & Wallets -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between transition-all hover:shadow-md">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<div class="w-10 h-10 rounded-xl bg-error-container flex items-center justify-center text-error">
+<span class="material-symbols-outlined text-headline-sm">phone_iphone</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface font-bold">فودافون كاش والمحافظ</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">محافظ ميزة الذكية</span>
+</div>
+</div>
+<span class="px-space-xs py-0.5 rounded bg-error-container text-on-error-container font-label-sm text-label-sm font-bold">15% من المبيعات</span>
+</div>
+<div class="mt-space-sm pt-space-xs flex flex-col">
+<span class="font-price-display text-price-display text-on-surface font-extrabold">2,800.00 <span class="text-headline-sm">ج.م</span></span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">14 معاملة محفظة</span>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded-lg flex flex-col gap-1 text-on-surface-variant font-body-sm text-body-sm mt-space-xs">
+<div class="flex justify-between items-center">
+<span>رقم محفظة الصيدلية:</span>
+<span class="font-bold text-on-surface font-mono text-label-sm text-label-sm">01099887766</span>
+</div>
+<div class="flex justify-between items-center">
+<span>التطابق مع SMS:</span>
+<span class="font-bold text-secondary flex items-center gap-0.5">
+<span class="material-symbols-outlined text-label-sm">sms</span>
+                جميع الرسائل مطابقة
+              </span>
+</div>
+</div>
+</div>
+<button class="w-full mt-space-md py-2.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md font-bold flex items-center justify-center gap-space-xs transition-colors" onclick="verifyWalletSms()" type="button">
+<span class="material-symbols-outlined text-label-lg">mark_email_read</span>
+<span>مطابقة كود تحويل SMS</span>
+</button>
+</div>
+<!-- Channel 4: POS Card Terminals -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between transition-all hover:shadow-md">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<div class="w-10 h-10 rounded-xl bg-tertiary-fixed flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-headline-sm">credit_card</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface font-bold">بطاقات بنكية (Visa/Master)</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">ماكينات البنك الأهلي وبنك مصر</span>
+</div>
+</div>
+<span class="px-space-xs py-0.5 rounded bg-tertiary-fixed text-tertiary font-label-sm text-label-sm font-bold">10% من المبيعات</span>
+</div>
+<div class="mt-space-sm pt-space-xs flex flex-col">
+<span class="font-price-display text-price-display text-tertiary font-extrabold">2,000.00 <span class="text-headline-sm">ج.م</span></span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">10 إيصالات ماكينة POS</span>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded-lg flex flex-col gap-1 text-on-surface-variant font-body-sm text-body-sm mt-space-xs">
+<div class="flex justify-between items-center">
+<span>ماكينة NBE (الأهلي):</span>
+<span class="font-bold text-on-surface">1,450.00 ج.م (TID: 88102)</span>
+</div>
+<div class="flex justify-between items-center">
+<span>ماكينة BM (بنك مصر):</span>
+<span class="font-bold text-on-surface">550.00 ج.م (TID: 55419)</span>
+</div>
+</div>
+</div>
+<button class="w-full mt-space-md py-2.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md font-bold flex items-center justify-center gap-space-xs transition-colors" onclick="printPosBatchSummary()" type="button">
+<span class="material-symbols-outlined text-label-lg">receipt</span>
+<span>طباعة إجمالي باتش الماكينة</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Section 2: Live Payment Verification & Webhook Sync Tool -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col gap-space-md">
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-headline-sm">fact_check</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">أداة الفحص والتحقق الفوري للمدفوعات المعلقة</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">التحقق المباشر من إشعار البنك بالرقم المرجعي (RRN / Ref ID) لتفادي خداع التحويلات المزيفة</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="font-label-sm text-label-sm text-secondary bg-secondary-fixed/50 px-space-sm py-1 rounded-full font-bold flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-secondary inline-block animate-ping"></span>
+          خادم الإشعارات اللحظية متصل
+        </span>
+</div>
+</div>
+<!-- Verification Input Grid -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-space-md items-end bg-surface-container-low p-space-md rounded-xl">
+<div class="md:col-span-3 flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-on-surface-variant font-bold" for="channel-select">قناة التحويل المستهدفة</label>
+<select class="h-12 bg-surface-container-lowest px-space-sm rounded-xl font-label-md text-label-md text-on-surface outline-none focus:ring-2 focus:ring-primary shadow-sm" id="channel-select">
+<option value="instapay">انستابي (InstaPay Ref ID)</option>
+<option value="vodafone">فودافون كاش (كود SMS التحويل)</option>
+<option value="pos">ماكينة بنكية (Approval Code / RRN)</option>
+</select>
+</div>
+<div class="md:col-span-5 flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-on-surface-variant font-bold" for="ref-input">الرقم المرجعي للمعاملة أو آخر 6 أرقام من التحويل</label>
+<div class="relative">
+<input class="w-full h-12 bg-surface-container-lowest pr-10 pl-space-sm rounded-xl font-body-md text-body-md text-on-surface outline-none focus:ring-2 focus:ring-primary shadow-sm placeholder:text-outline-variant font-mono" id="ref-input" placeholder="مثال: IP-99238472 أو 983214" type="text"/>
+<span class="material-symbols-outlined absolute right-3 top-3 text-on-surface-variant text-label-lg">fingerprint</span>
+</div>
+</div>
+<div class="md:col-span-2 flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-on-surface-variant font-bold" for="amount-input">المبلغ المطلوب مطابقة (ج.م)</label>
+<input class="h-12 bg-surface-container-lowest px-space-sm rounded-xl font-label-md text-label-md text-on-surface outline-none focus:ring-2 focus:ring-primary shadow-sm font-bold" id="amount-input" placeholder="0.00" type="number"/>
+</div>
+<div class="md:col-span-2 flex gap-space-xs">
+<button class="w-full h-12 bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md font-bold rounded-xl flex items-center justify-center gap-space-xs transition-colors shadow-sm" onclick="verifyTransaction()" type="button">
+<span class="material-symbols-outlined text-headline-sm">check_circle</span>
+<span>مطابقة فورية</span>
+</button>
+</div>
+</div>
+<!-- Live Verified Alert Example -->
+<div class="bg-secondary-fixed/30 p-space-sm rounded-xl flex items-center justify-between" id="verify-feedback">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-secondary flex items-center justify-center text-on-secondary shrink-0">
+<span class="material-symbols-outlined text-label-lg">verified</span>
+</div>
+<div class="flex flex-col text-on-surface">
+<span class="font-label-md text-label-md font-bold">آخر إشعار انستابي مؤكد آلياً: #IP-99238472 بمبلغ 485.00 ج.م لحساب الصيدلية</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">المرسل: سارة أحمد محمود • البنك: بنك مصر • الفاتورة المقترنة: #INV-2024-8841</span>
+</div>
+</div>
+<button class="px-space-md py-1.5 rounded-lg bg-surface-container-lowest text-primary font-label-sm text-label-sm font-bold shadow-sm hover:bg-surface-container-high transition-colors" onclick="attachToInvoice('INV-2024-8841')" type="button">
+        ربط بالفاتورة الحالية
+      </button>
+</div>
+</div>
+<!-- Section 3: Transactions Ledger Table (سجل العمليات المالية اللحظي) -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden flex flex-col">
+<!-- Table Header Toolbar -->
+<div class="p-space-md flex flex-col md:flex-row items-stretch md:items-center justify-between gap-space-sm bg-surface-container-low">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-headline-sm">receipt_long</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">سجل العمليات المالية وحركات الدفع اللحظية (Ledger)</span>
+</div>
+<div class="flex items-center gap-space-xs flex-wrap">
+<!-- Filter by channel -->
+<button class="ledger-tab px-space-sm py-1.5 rounded-lg bg-primary text-on-primary font-label-sm text-label-sm font-bold transition-colors" onclick="filterLedger('all')" type="button">الكل (84)</button>
+<button class="ledger-tab px-space-sm py-1.5 rounded-lg bg-surface-container text-on-surface font-label-sm text-label-sm font-bold hover:bg-surface-container-high transition-colors" onclick="filterLedger('cash')" type="button">كاش (38)</button>
+<button class="ledger-tab px-space-sm py-1.5 rounded-lg bg-surface-container text-on-surface font-label-sm text-label-sm font-bold hover:bg-surface-container-high transition-colors" onclick="filterLedger('instapay')" type="button">انستابي (22)</button>
+<button class="ledger-tab px-space-sm py-1.5 rounded-lg bg-surface-container text-on-surface font-label-sm text-label-sm font-bold hover:bg-surface-container-high transition-colors" onclick="filterLedger('vodafone')" type="button">محافظ كاش (14)</button>
+<button class="ledger-tab px-space-sm py-1.5 rounded-lg bg-surface-container text-on-surface font-label-sm text-label-sm font-bold hover:bg-surface-container-high transition-colors" onclick="filterLedger('visa')" type="button">فيزا POS (10)</button>
+<div class="h-6 w-px bg-outline-variant mx-1"></div>
+<button class="p-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface transition-colors" onclick="exportLedgerCsv()" title="تصدير إكسيل / CSV" type="button">
+<span class="material-symbols-outlined text-label-lg">download</span>
+</button>
+<button class="p-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface transition-colors" onclick="window.print()" title="طباعة السجل" type="button">
+<span class="material-symbols-outlined text-label-lg">print</span>
+</button>
+</div>
+</div>
+<!-- Responsive Table -->
+<div class="overflow-x-auto w-full">
+<table class="w-full text-right border-collapse">
+<thead>
+<tr class="bg-surface-container font-label-sm text-label-sm text-on-surface-variant font-bold">
+<th class="p-space-sm">رقم الفاتورة</th>
+<th class="p-space-sm">الوقت</th>
+<th class="p-space-sm">اسم المريض / العميل</th>
+<th class="p-space-sm">طريقة وسيلة الدفع</th>
+<th class="p-space-sm">المبلغ المدفوع</th>
+<th class="p-space-sm">الكود المرجعي / التفاصيل</th>
+<th class="p-space-sm">حالة السداد</th>
+<th class="p-space-sm">الكاشير</th>
+<th class="p-space-sm text-center">إجراءات</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container font-body-sm text-body-sm text-on-surface" id="ledger-body">
+<!-- Row 1: InstaPay -->
+<tr class="hover:bg-surface-container-low transition-colors" data-type="instapay">
+<td class="p-space-sm font-mono font-bold text-primary">#INV-2024-8841</td>
+<td class="p-space-sm font-mono text-on-surface-variant">04:28:10 م</td>
+<td class="p-space-sm">
+<div class="flex flex-col">
+<span class="font-bold text-on-surface">أ. سارة أحمد محمود</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">روشتة باطنة وتغذية</span>
+</div>
+</td>
+<td class="p-space-sm">
+<span class="px-space-xs py-1 rounded-lg bg-primary-fixed text-primary font-label-sm text-label-sm font-bold inline-flex items-center gap-1">
+<span class="material-symbols-outlined text-label-sm">bolt</span>
+                انستابي (InstaPay)
+              </span>
+</td>
+<td class="p-space-sm font-price-display text-headline-sm text-primary font-bold">485.00 <span class="font-label-sm text-label-sm text-on-surface-variant">ج.م</span></td>
+<td class="p-space-sm">
+<div class="flex flex-col font-mono text-label-sm text-label-sm">
+<span class="text-on-surface font-bold">IP-99238472</span>
+<span class="text-on-surface-variant">CIB -&gt; FATHY_PHARMACY</span>
+</div>
+</td>
+<td class="p-space-sm">
+<span class="px-space-xs py-0.5 rounded bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-bold inline-flex items-center gap-1">
+<span class="material-symbols-outlined text-label-sm">check_circle</span>
+                مؤكد لحظياً
+              </span>
+</td>
+<td class="p-space-sm font-label-sm text-label-sm text-on-surface">د. فتحي عصام</td>
+<td class="p-space-sm text-center">
+<div class="flex items-center justify-center gap-1">
+<button class="p-1.5 rounded-lg hover:bg-surface-container text-on-surface-variant hover:text-primary transition-colors" onclick="reprintReceipt('INV-2024-8841')" title="إعادة طباعة الإيصال" type="button">
+<span class="material-symbols-outlined text-label-lg">print</span>
+</button>
+<button class="p-1.5 rounded-lg hover:bg-error-container text-on-surface-variant hover:text-error transition-colors" onclick="refundModal('INV-2024-8841')" title="استرجاع مالي" type="button">
+<span class="material-symbols-outlined text-label-lg">replay</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 2: Cash -->
+<tr class="hover:bg-surface-container-low transition-colors" data-type="cash">
+<td class="p-space-sm font-mono font-bold text-primary">#INV-2024-8840</td>
+<td class="p-space-sm font-mono text-on-surface-variant">04:21:44 م</td>
+<td class="p-space-sm">
+<div class="flex flex-col">
+<span class="font-bold text-on-surface">محمود شريف كامل</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">أدوية سكر وضغط (شهري)</span>
+</div>
+</td>
+<td class="p-space-sm">
+<span class="px-space-xs py-1 rounded-lg bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-bold inline-flex items-center gap-1">
+<span class="material-symbols-outlined text-label-sm">payments</span>
+                كاش نقدي
+              </span>
+</td>
+<td class="p-space-sm font-price-display text-headline-sm text-secondary font-bold">1,120.00 <span class="font-label-sm text-label-sm text-on-surface-variant">ج.م</span></td>
+<td class="p-space-sm">
+<div class="flex flex-col font-mono text-label-sm text-label-sm">
+<span class="text-on-surface">تم استلام: 1,200 ج.م</span>
+<span class="text-secondary font-bold">الباقي: 80 ج.م</span>
+</div>
+</td>
+<td class="p-space-sm">
+<span class="px-space-xs py-0.5 rounded bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-bold inline-flex items-center gap-1">
+<span class="material-symbols-outlined text-label-sm">check_circle</span>
+                في الخزينة
+              </span>
+</td>
+<td class="p-space-sm font-label-sm text-label-sm text-on-surface">د. فتحي عصام</td>
+<td class="p-space-sm text-center">
+<div class="flex items-center justify-center gap-1">
+<button class="p-1.5 rounded-lg hover:bg-surface-container text-on-surface-variant hover:text-primary transition-colors" onclick="reprintReceipt('INV-2024-8840')" title="إعادة طباعة الإيصال" type="button">
+<span class="material-symbols-outlined text-label-lg">print</span>
+</button>
+<button class="p-1.5 rounded-lg hover:bg-error-container text-on-surface-variant hover:text-error transition-colors" onclick="refundModal('INV-2024-8840')" title="استرجاع مالي" type="button">
+<span class="material-symbols-outlined text-label-lg">replay</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 3: Vodafone Cash -->
+<tr class="hover:bg-surface-container-low transition-colors" data-type="vodafone">
+<td class="p-space-sm font-mono font-bold text-primary">#INV-2024-8839</td>
+<td class="p-space-sm font-mono text-on-surface-variant">04:14:02 م</td>
+<td class="p-space-sm">
+<div class="flex flex-col">
+<span class="font-bold text-on-surface">داليا إبراهيم</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">منتجات عناية وتجميل</span>
+</div>
+</td>
+<td class="p-space-sm">
+<span class="px-space-xs py-1 rounded-lg bg-error-container text-on-error-container font-label-sm text-label-sm font-bold inline-flex items-center gap-1">
+<span class="material-symbols-outlined text-label-sm">phone_iphone</span>
+                فودافون كاش
+              </span>
+</td>
+<td class="p-space-sm font-price-display text-headline-sm text-on-surface font-bold">650.00 <span class="font-label-sm text-label-sm text-on-surface-variant">ج.م</span></td>
+<td class="p-space-sm">
+<div class="flex flex-col font-mono text-label-sm text-label-sm">
+<span class="text-on-surface font-bold">SMS ID: VF-782910</span>
+<span class="text-on-surface-variant">من: 01012399812</span>
+</div>
+</td>
+<td class="p-space-sm">
+<span class="px-space-xs py-0.5 rounded bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-bold inline-flex items-center gap-1">
+<span class="material-symbols-outlined text-label-sm">check_circle</span>
+                مؤكد SMS
+              </span>
+</td>
+<td class="p-space-sm font-label-sm text-label-sm text-on-surface">د. نورهان سعيد</td>
+<td class="p-space-sm text-center">
+<div class="flex items-center justify-center gap-1">
+<button class="p-1.5 rounded-lg hover:bg-surface-container text-on-surface-variant hover:text-primary transition-colors" onclick="reprintReceipt('INV-2024-8839')" title="إعادة طباعة الإيصال" type="button">
+<span class="material-symbols-outlined text-label-lg">print</span>
+</button>
+<button class="p-1.5 rounded-lg hover:bg-error-container text-on-surface-variant hover:text-error transition-colors" onclick="refundModal('INV-2024-8839')" title="استرجاع مالي" type="button">
+<span class="material-symbols-outlined text-label-lg">replay</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 4: Visa POS Card -->
+<tr class="hover:bg-surface-container-low transition-colors" data-type="visa">
+<td class="p-space-sm font-mono font-bold text-primary">#INV-2024-8838</td>
+<td class="p-space-sm font-mono text-on-surface-variant">03:55:18 م</td>
+<td class="p-space-sm">
+<div class="flex flex-col">
+<span class="font-bold text-on-surface">م. طارق العشري</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">فيتامينات ومكملات رياضية</span>
+</div>
+</td>
+<td class="p-space-sm">
+<span class="px-space-xs py-1 rounded-lg bg-tertiary-fixed text-tertiary font-label-sm text-label-sm font-bold inline-flex items-center gap-1">
+<span class="material-symbols-outlined text-label-sm">credit_card</span>
+                فيزا بنك الأهلي
+              </span>
+</td>
+<td class="p-space-sm font-price-display text-headline-sm text-tertiary font-bold">1,450.00 <span class="font-label-sm text-label-sm text-on-surface-variant">ج.م</span></td>
+<td class="p-space-sm">
+<div class="flex flex-col font-mono text-label-sm text-label-sm">
+<span class="text-on-surface font-bold">RRN: 004829104812</span>
+<span class="text-on-surface-variant">Appr: 948123 (POS #1)</span>
+</div>
+</td>
+<td class="p-space-sm">
+<span class="px-space-xs py-0.5 rounded bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-bold inline-flex items-center gap-1">
+<span class="material-symbols-outlined text-label-sm">check_circle</span>
+                معتمد بنكياً
+              </span>
+</td>
+<td class="p-space-sm font-label-sm text-label-sm text-on-surface">د. فتحي عصام</td>
+<td class="p-space-sm text-center">
+<div class="flex items-center justify-center gap-1">
+<button class="p-1.5 rounded-lg hover:bg-surface-container text-on-surface-variant hover:text-primary transition-colors" onclick="reprintReceipt('INV-2024-8838')" title="إعادة طباعة الإيصال" type="button">
+<span class="material-symbols-outlined text-label-lg">print</span>
+</button>
+<button class="p-1.5 rounded-lg hover:bg-error-container text-on-surface-variant hover:text-error transition-colors" onclick="refundModal('INV-2024-8838')" title="استرجاع مالي" type="button">
+<span class="material-symbols-outlined text-label-lg">replay</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 5: InstaPay -->
+<tr class="hover:bg-surface-container-low transition-colors" data-type="instapay">
+<td class="p-space-sm font-mono font-bold text-primary">#INV-2024-8837</td>
+<td class="p-space-sm font-mono text-on-surface-variant">03:42:50 م</td>
+<td class="p-space-sm">
+<div class="flex flex-col">
+<span class="font-bold text-on-surface">فاطمة حسن علي</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">مضادات حيوية ومسكنات</span>
+</div>
+</td>
+<td class="p-space-sm">
+<span class="px-space-xs py-1 rounded-lg bg-primary-fixed text-primary font-label-sm text-label-sm font-bold inline-flex items-center gap-1">
+<span class="material-symbols-outlined text-label-sm">bolt</span>
+                انستابي (InstaPay)
+              </span>
+</td>
+<td class="p-space-sm font-price-display text-headline-sm text-primary font-bold">290.00 <span class="font-label-sm text-label-sm text-on-surface-variant">ج.م</span></td>
+<td class="p-space-sm">
+<div class="flex flex-col font-mono text-label-sm text-label-sm">
+<span class="text-on-surface font-bold">IP-88410294</span>
+<span class="text-on-surface-variant">QNB -&gt; FATHY_PHARMACY</span>
+</div>
+</td>
+<td class="p-space-sm">
+<span class="px-space-xs py-0.5 rounded bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-bold inline-flex items-center gap-1">
+<span class="material-symbols-outlined text-label-sm">check_circle</span>
+                مؤكد لحظياً
+              </span>
+</td>
+<td class="p-space-sm font-label-sm text-label-sm text-on-surface">د. نورهان سعيد</td>
+<td class="p-space-sm text-center">
+<div class="flex items-center justify-center gap-1">
+<button class="p-1.5 rounded-lg hover:bg-surface-container text-on-surface-variant hover:text-primary transition-colors" onclick="reprintReceipt('INV-2024-8837')" title="إعادة طباعة الإيصال" type="button">
+<span class="material-symbols-outlined text-label-lg">print</span>
+</button>
+<button class="p-1.5 rounded-lg hover:bg-error-container text-on-surface-variant hover:text-error transition-colors" onclick="refundModal('INV-2024-8837')" title="استرجاع مالي" type="button">
+<span class="material-symbols-outlined text-label-lg">replay</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Table Pagination / Footer -->
+<div class="p-space-sm bg-surface-container-low flex flex-col sm:flex-row items-center justify-between gap-space-sm">
+<span class="font-body-sm text-body-sm text-on-surface-variant">عرض 5 من أصل 84 حركة مالية مسجلة بالوردية</span>
+<div class="flex items-center gap-1">
+<button class="w-8 h-8 rounded-lg bg-surface-container-lowest text-on-surface flex items-center justify-center font-bold text-label-sm shadow-sm" type="button">1</button>
+<button class="w-8 h-8 rounded-lg bg-surface-container text-on-surface flex items-center justify-center font-bold text-label-sm hover:bg-surface-container-high" type="button">2</button>
+<button class="w-8 h-8 rounded-lg bg-surface-container text-on-surface flex items-center justify-center font-bold text-label-sm hover:bg-surface-container-high" type="button">3</button>
+<span class="px-1 text-on-surface-variant">...</span>
+<button class="w-8 h-8 rounded-lg bg-surface-container text-on-surface flex items-center justify-center font-bold text-label-sm hover:bg-surface-container-high" type="button">17</button>
+</div>
+</div>
+</div>
+<!-- Section 4: Shift Closing & Z-Report Preview Drawer / Section -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-md">
+<!-- Shift Financial Reconciliation Summary (Z-Report Audit) -->
+<div class="lg:col-span-8 bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-xl bg-primary-fixed flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-headline-sm">point_of_sale</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">تقرير إغلاق الوردية الفعلي (Z-Report Shift Balance)</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">مطابقة الخزينة النقدية والتحويلات الرقمية قبل تسليم الوردية المسائية</span>
+</div>
+</div>
+<span class="px-space-sm py-1 rounded-lg bg-surface-container text-on-surface font-mono font-bold text-label-sm text-label-sm">وردية: 08:00 ص - 04:30 م</span>
+</div>
+<!-- Formula Breakdown Calculation -->
+<div class="grid grid-cols-2 md:grid-cols-4 gap-space-sm">
+<div class="p-space-sm bg-surface-container-low rounded-xl flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-bold">رصيد البداية (العُهدة)</span>
+<span class="font-headline-md text-headline-md text-on-surface font-extrabold mt-1">1,000.00 <span class="font-label-sm text-label-sm">ج.م</span></span>
+<span class="font-label-sm text-label-sm text-secondary">تم التدقيق والاستلام</span>
+</div>
+<div class="p-space-sm bg-surface-container-low rounded-xl flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-bold">+ مقبوضات الكاش</span>
+<span class="font-headline-md text-headline-md text-secondary font-extrabold mt-1">8,200.00 <span class="font-label-sm text-label-sm">ج.م</span></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">38 إيصال نقدي</span>
+</div>
+<div class="p-space-sm bg-surface-container-low rounded-xl flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-bold">- مصروفات نثرية / فواتير</span>
+<span class="font-headline-md text-headline-md text-error font-extrabold mt-1">150.00 <span class="font-label-sm text-label-sm">ج.م</span></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">إيصال مياه ونظافة</span>
+</div>
+<div class="p-space-sm bg-primary-fixed/40 rounded-xl flex flex-col">
+<span class="font-label-sm text-label-sm text-primary font-bold">= الصافي الفعلي للتوريد</span>
+<span class="font-headline-md text-headline-md text-primary font-extrabold mt-1">9,050.00 <span class="font-label-sm text-label-sm">ج.م</span></span>
+<span class="font-label-sm text-label-sm text-primary font-bold">يورد لخزينة الإدارة</span>
+</div>
+</div>
+<!-- Electronic Settlement Confirmation Strip -->
+<div class="p-space-sm rounded-xl bg-surface-container flex flex-col md:flex-row items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-headline-md text-secondary">cloud_done</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-bold">المتحصلات الرقمية المودعة في الحسابات البنكية مباشرة</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">10,250.00 ج.م موزعة (5,450 انستابي + 2,800 فودافون كاش + 2,000 فيزا POS)</span>
+</div>
+</div>
+<span class="px-space-md py-1 rounded-lg bg-surface-container-lowest text-secondary font-label-md text-label-md font-bold shadow-sm">
+            لا تتطلب توريد نقدي
+          </span>
+</div>
+</div>
+<!-- Final Submit Action -->
+<div class="mt-space-lg pt-space-md border-t border-surface-container flex flex-col sm:flex-row items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-xs text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-label-md text-primary">verified_user</span>
+<span>إغلاق الوردية ينهي جلسة الكاشير الحالية ويطبع تقرير الجرد التفصيلي Z-Report تلقائياً</span>
+</div>
+<button class="w-full sm:w-auto h-12 px-space-xl bg-secondary hover:bg-on-secondary-container text-on-secondary font-label-lg text-label-lg font-bold rounded-xl flex items-center justify-center gap-space-xs shadow-md transition-all" onclick="executeShiftClosure()" type="button">
+<span class="material-symbols-outlined text-headline-sm">print</span>
+<span>إغلاق الوردية وتوريد النقدية (Z-Report)</span>
+</button>
+</div>
+</div>
+<!-- Active Hardware & Device Health Check Widget -->
+<div class="lg:col-span-4 bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">حالة أجهزة الدفع والطرفيات</span>
+<span class="material-symbols-outlined text-primary">devices</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<!-- Terminal 1 -->
+<div class="p-space-sm bg-surface-container-low rounded-xl flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-bold">طابعة الإيصالات الحرارية</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono">EPSON TM-T20III (USB/LAN)</span>
+</div>
+</div>
+<span class="px-space-xs py-0.5 rounded bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-bold">جاهزة للطباعة</span>
+</div>
+<!-- Terminal 2 -->
+<div class="p-space-sm bg-surface-container-low rounded-xl flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-bold">ماكينة بنك مصر الذكية</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono">Pax A920 (Wi-Fi 5G)</span>
+</div>
+</div>
+<span class="px-space-xs py-0.5 rounded bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-bold">متصلة 100%</span>
+</div>
+<!-- Terminal 3 -->
+<div class="p-space-sm bg-surface-container-low rounded-xl flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-bold">ماكينة البنك الأهلي NBE</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono">Verifone V240m</span>
+</div>
+</div>
+<span class="px-space-xs py-0.5 rounded bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-bold">متصلة 100%</span>
+</div>
+<!-- Terminal 4 -->
+<div class="p-space-sm bg-surface-container-low rounded-xl flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-bold">الدرج النقدي الإلكتروني</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono">RJ11 Pulse Trigger</span>
+</div>
+</div>
+<span class="px-space-xs py-0.5 rounded bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-bold">يفتح آلياً مع البيع</span>
+</div>
+</div>
+</div>
+<button class="w-full mt-space-md py-2.5 rounded-xl bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md font-bold flex items-center justify-center gap-space-xs transition-colors" onclick="testCashDrawer()" type="button">
+<span class="material-symbols-outlined text-label-lg">lock_open</span>
+<span>اختبار فتح درج النقدية يدوياً (F12)</span>
+</button>
+</div>
+</div>
+<!-- Notification Toast Simulation -->
+<div class="fixed bottom-6 left-6 z-50 transform translate-y-20 opacity-0 transition-all duration-300 pointer-events-none bg-inverse-surface text-inverse-on-surface px-space-md py-space-sm rounded-xl shadow-xl flex items-center gap-space-sm" id="toast">
+<span class="material-symbols-outlined text-secondary" id="toast-icon">check_circle</span>
+<span class="font-label-md text-label-md font-bold" id="toast-msg">تمت العملية بنجاح</span>
+</div>
+</div>
+<!-- Inline JavaScript Interactions -->
+<script>
+  function showToast(msg, icon = 'check_circle') {
+    const toast = document.getElementById('toast');
+    const toastMsg = document.getElementById('toast-msg');
+    const toastIcon = document.getElementById('toast-icon');
+    if (!toast || !toastMsg) return;
+
+    toastMsg.textContent = msg;
+    toastIcon.textContent = icon;
+    toast.classList.remove('translate-y-20', 'opacity-0', 'pointer-events-none');
+    toast.classList.add('translate-y-0', 'opacity-100');
+
+    setTimeout(() => {
+      toast.classList.add('translate-y-20', 'opacity-0', 'pointer-events-none');
+      toast.classList.remove('translate-y-0', 'opacity-100');
+    }, 3200);
+  }
+
+  function filterLedger(type) {
+    const rows = document.querySelectorAll('#ledger-body tr');
+    const tabs = document.querySelectorAll('.ledger-tab');
+
+    tabs.forEach(tab => {
+      tab.classList.remove('bg-primary', 'text-on-primary');
+      tab.classList.add('bg-surface-container', 'text-on-surface');
+    });
+
+    if (window.event && window.event.currentTarget) {
+      window.event.currentTarget.classList.add('bg-primary', 'text-on-primary');
+      window.event.currentTarget.classList.remove('bg-surface-container', 'text-on-surface');
+    }
+
+    rows.forEach(row => {
+      if (type === 'all' || row.getAttribute('data-type') === type) {
+        row.style.display = '';
+      } else {
+        row.style.display = 'none';
+      }
+    });
+
+    showToast(`تم تصفية المعاملات: ${type === 'all' ? 'جميع القنوات' : type}`);
+  }
+
+  function verifyTransaction() {
+    const ref = document.getElementById('ref-input').value.trim();
+    const amount = document.getElementById('amount-input').value.trim();
+    if (!ref) {
+      showToast('يرجى إدخال الرقم المرجعي للمعاملة', 'error');
+      return;
+    }
+    showToast(`تم تأكيد المعاملة #${ref} وتطابقها مع السجل المالي البنكي`, 'verified');
+  }
+
+  function attachToInvoice(invId) {
+    showToast(`تم ربط إشعار انستابي تلقائياً بالفاتورة ${invId}`, 'link');
+  }
+
+  function triggerPosPing() {
+    showToast('تم فحص اتصال ماكينات POS (بنك مصر والأهلي) - الاستجابة 12ms', 'router');
+  }
+
+  function quickCashAudit() {
+    showToast('جرد الدرج الفعلي: 8,200.00 ج.م نقدية مطابقة للسجل المحاسبي بالكامل', 'check_circle');
+  }
+
+  function showInstaPayVerificationModal() {
+    showToast('ماسح QR انستابي نشط - في انتظار قراءة كود العميل', 'qr_code_scanner');
+  }
+
+  function verifyWalletSms() {
+    showToast('تم فحص آخر رسائل فودافون كاش - المعاملات 14/14 موثقة', 'sms');
+  }
+
+  function printPosBatchSummary() {
+    showToast('جاري طباعة ملخص تسوية ماكينات البطاقات البنكية (POS Batch Total)...', 'print');
+  }
+
+  function reprintReceipt(invNumber) {
+    showToast(`جاري إرسال أمر إعادة طباعة الإيصال ${invNumber} للطابعة الحرارية...`, 'print');
+  }
+
+  function refundModal(invNumber) {
+    showToast(`فتح بروتوكول استرجاع الفاتورة ${invNumber} (يلزم تصريح الصيدلي الأول)`, 'warning');
+  }
+
+  function openShiftCloseModal() {
+    showToast('تم تجهيز كشف الجرد النهائي للوردية رقم #142', 'inventory');
+  }
+
+  function executeShiftClosure() {
+    showToast('تم إغلاق الوردية وتوريد مبلغ 9,050.00 ج.م للخزينة، وطباعة تقرير Z-Report!', 'task_alt');
+  }
+
+  function testCashDrawer() {
+    showToast('تم إرسال إشارة الفتح الإلكتروني لدرج النقدية الآلي POS-01', 'lock_open');
+  }
+
+  function exportLedgerCsv() {
+    showToast('جاري تصدير سجل المعاملات المالية كملف إكسيل CSV...', 'download');
+  }
+</script></main></div>
+<!-- Floating Notification Toast -->
+<div id="firebase-toast" class="fixed bottom-6 left-1/2 -translate-x-1/2 z-[9999] hidden flex items-center gap-3 px-6 py-3.5 rounded-2xl shadow-2xl bg-gray-900/95 text-white backdrop-blur-md border border-white/10 transition-all duration-300">
+  <span class="material-symbols-outlined text-emerald-400 text-2xl" id="firebase-toast-icon">check_circle</span>
+  <span id="firebase-toast-msg" class="text-sm font-semibold">تم الحفظ بنجاح</span>
+</div>
+
+<!-- Firebase Modular Integration (SDK v13.4.0) -->
+<script type="module">
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/13.4.0/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/13.4.0/firebase-analytics.js";
+  import { getAuth, onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/13.4.0/firebase-auth.js";
+  import { getFirestore, collection, addDoc, serverTimestamp, getDocs, query, orderBy, limit } from "https://www.gstatic.com/firebasejs/13.4.0/firebase-firestore.js";
+
+  const firebaseConfig = {
+  "apiKey": "AIzaSyAv6oY8WcrQr6gw5TYPJRIvVddEiQsZ_tc",
+  "authDomain": "jamal-5de2c.firebaseapp.com",
+  "projectId": "jamal-5de2c",
+  "storageBucket": "jamal-5de2c.firebasestorage.app",
+  "messagingSenderId": "220790414446",
+  "appId": "1:220790414446:web:7bec45ab14f04ac216da7f",
+  "measurementId": "G-7DLDSPM512"
+};
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  let analytics = null;
+  try {
+    analytics = getAnalytics(app);
+  } catch(e) {
+    console.log("Analytics note:", e);
+  }
+  const auth = getAuth(app);
+  const db = getFirestore(app);
+
+  // Expose to window for UI handlers
+  window.FirebaseApp = { app, analytics, auth, db, collection, addDoc, serverTimestamp, signOut };
+
+  // Toast notification helper
+  window.showToast = function(message, type = 'success') {
+    const toast = document.getElementById('firebase-toast');
+    const msgEl = document.getElementById('firebase-toast-msg');
+    const iconEl = document.getElementById('firebase-toast-icon');
+    if (!toast || !msgEl) {
+      alert(message);
+      return;
+    }
+    msgEl.textContent = message;
+    if (type === 'error') {
+      iconEl.textContent = 'error';
+      iconEl.className = 'material-symbols-outlined text-rose-400 text-2xl';
+    } else {
+      iconEl.textContent = 'check_circle';
+      iconEl.className = 'material-symbols-outlined text-emerald-400 text-2xl';
+    }
+    toast.classList.remove('hidden');
+    toast.classList.remove('opacity-0');
+    toast.classList.add('opacity-100');
+    setTimeout(() => {
+      toast.classList.add('opacity-0');
+      setTimeout(() => toast.classList.add('hidden'), 300);
+    }, 4000);
+  };
+
+  // Auth State Listener
+  onAuthStateChanged(auth, (user) => {
+    const userBadge = document.getElementById('user-auth-badge');
+    if (userBadge) {
+      if (user) {
+        userBadge.innerHTML = `
+          <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-600 text-xs font-bold">
+            <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+            ${user.email || 'مستخدم مسجل'}
+          </span>
+        `;
+      }
+    }
+  });
+
+  
+</script>
+</body></html>

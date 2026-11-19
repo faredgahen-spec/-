@@ -1,0 +1,824 @@
+﻿<!DOCTYPE html>
+
+<html dir="rtl" lang="ar"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><title>Mr. Shahdy English Platform</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;family=Space+Grotesk:wght@600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "on-tertiary-fixed-variant": "#005236",
+          "on-surface-variant": "#44474c",
+          "on-background": "#191c1e",
+          "error": "#ba1a1a",
+          "surface-container-high": "#e6e8ea",
+          "surface-variant": "#e0e3e5",
+          "secondary-container": "#fe9c22",
+          "surface-tint": "#525f75",
+          "tertiary-container": "#002113",
+          "on-error": "#ffffff",
+          "secondary-fixed-dim": "#ffb870",
+          "on-surface": "#191c1e",
+          "secondary": "#8b5000",
+          "primary-fixed-dim": "#bac7e1",
+          "error-container": "#ffdad6",
+          "inverse-primary": "#bac7e1",
+          "inverse-surface": "#2d3133",
+          "tertiary-fixed-dim": "#4edea3",
+          "on-primary-container": "#77849c",
+          "primary-container": "#0e1c2f",
+          "tertiary": "#000000",
+          "primary": "#000000",
+          "surface-container-low": "#f2f4f6",
+          "surface-dim": "#d8dadc",
+          "surface-bright": "#f7f9fb",
+          "on-secondary-fixed": "#2c1600",
+          "background": "#f7f9fb",
+          "on-tertiary": "#ffffff",
+          "on-error-container": "#93000a",
+          "surface": "#f7f9fb",
+          "surface-container-highest": "#e0e3e5",
+          "surface-container": "#eceef0",
+          "on-secondary-container": "#673b00",
+          "surface-container-lowest": "#ffffff",
+          "on-secondary": "#ffffff",
+          "on-primary-fixed-variant": "#3a475c",
+          "inverse-on-surface": "#eff1f3",
+          "outline": "#75777d",
+          "on-primary": "#ffffff",
+          "tertiary-fixed": "#6ffbbe",
+          "on-tertiary-fixed": "#002113",
+          "on-secondary-fixed-variant": "#693c00",
+          "primary-fixed": "#d6e3fe",
+          "on-tertiary-container": "#009668",
+          "on-primary-fixed": "#0e1c2f",
+          "secondary-fixed": "#ffdcbe",
+          "outline-variant": "#c5c6cd"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.25rem",
+          "lg": "0.5rem",
+          "xl": "0.75rem",
+          "full": "9999px"
+        },
+        "spacing": {
+          "space-sm": "0.5rem",
+          "gutter": "1.25rem",
+          "gutter-desktop": "1.5rem",
+          "space-xl": "2.5rem",
+          "space-lg": "1.5rem",
+          "margin-desktop": "3rem",
+          "space-md": "1rem",
+          "margin": "1rem",
+          "margin-tablet": "2rem",
+          "space-xs": "0.25rem"
+        },
+        "fontFamily": {
+          "headline-md": [
+            "Plus Jakarta Sans"
+          ],
+          "label-md": [
+            "Space Grotesk"
+          ],
+          "display-lg-mobile": [
+            "Plus Jakarta Sans"
+          ],
+          "body-sm": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-sm": [
+            "Plus Jakarta Sans"
+          ],
+          "label-sm": [
+            "Space Grotesk"
+          ],
+          "label-lg": [
+            "Space Grotesk"
+          ],
+          "body-md": [
+            "Plus Jakarta Sans"
+          ],
+          "body-lg": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-lg-mobile": [
+            "Plus Jakarta Sans"
+          ],
+          "display-lg": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-lg": [
+            "Plus Jakarta Sans"
+          ]
+        },
+        "fontSize": {
+          "headline-md": [
+            "24px",
+            {
+              "lineHeight": "32px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "700"
+            }
+          ],
+          "label-md": [
+            "12px",
+            {
+              "lineHeight": "16px",
+              "letterSpacing": "0.04em",
+              "fontWeight": "600"
+            }
+          ],
+          "display-lg-mobile": [
+            "34px",
+            {
+              "lineHeight": "42px",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "800"
+            }
+          ],
+          "body-sm": [
+            "14px",
+            {
+              "lineHeight": "20px",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-sm": [
+            "20px",
+            {
+              "lineHeight": "28px",
+              "fontWeight": "600"
+            }
+          ],
+          "label-sm": [
+            "11px",
+            {
+              "lineHeight": "14px",
+              "letterSpacing": "0.06em",
+              "fontWeight": "700"
+            }
+          ],
+          "label-lg": [
+            "14px",
+            {
+              "lineHeight": "18px",
+              "letterSpacing": "0.02em",
+              "fontWeight": "600"
+            }
+          ],
+          "body-md": [
+            "16px",
+            {
+              "lineHeight": "24px",
+              "fontWeight": "400"
+            }
+          ],
+          "body-lg": [
+            "18px",
+            {
+              "lineHeight": "28px",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-lg-mobile": [
+            "26px",
+            {
+              "lineHeight": "34px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "700"
+            }
+          ],
+          "display-lg": [
+            "48px",
+            {
+              "lineHeight": "56px",
+              "letterSpacing": "-0.03em",
+              "fontWeight": "800"
+            }
+          ],
+          "headline-lg": [
+            "32px",
+            {
+              "lineHeight": "40px",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "700"
+            }
+          ]
+        }
+      },
+    },
+  }</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><header class="fixed top-0 inset-x-0 z-50 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 w-full px-gutter-desktop mx-auto flex items-center justify-between gap-gutter"><div class="flex items-center gap-space-lg"><div class="flex items-center gap-space-sm"><img alt="Mr. Shahdy English Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAScWzEgllUJDfLziy-xGdMAYs_LF3WOGDlZaVZhROVTBjGqtUsm3oF0bWXyQzB1C0bcXe74zSw37ODaBTfVr7T7k3gYkMbMb4r4vHL-QdskgUO-Vc3nIF2FaatZopRNxL9bRnGZkXMA0fwVrPkchuSBN7G48Wclst-16yX1bqJwnfRJ7YY8ibznWdE9xbHj1hFOAX5JWLmIiHxU0SM4GtiwcGIubHPQkKa0k9Wwqk"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary-container leading-none">Mr. Shahdy</span><span class="font-label-sm text-label-sm text-on-surface-variant leading-none mt-space-xs">منصة الثانوية العامة للغة الإنجليزية</span></div></div><nav class="hidden xl:flex items-center gap-space-xs bg-surface-container-low p-space-xs rounded-xl" data-active-classes="bg-primary-container text-on-primary font-bold rounded-lg shadow-sm"><a class="px-space-md py-space-sm font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface rounded-lg transition-colors" data-path="dashboard" href="#">لوحة التحكم</a><a aria-current="page" class="px-space-md py-space-sm transition-colors bg-primary-container text-on-primary font-bold rounded-lg shadow-sm" data-path="my-courses" href="#">دوراتي</a><a class="px-space-md py-space-sm font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface rounded-lg transition-colors" data-path="live-sessions" href="#">البث المباشر</a><a class="px-space-md py-space-sm font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface rounded-lg transition-colors" data-path="practice-and-quizzes" href="#">بنك الأسئلة</a><a class="px-space-md py-space-sm font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface rounded-lg transition-colors" data-path="community" href="#">مجتمع الطلاب</a></nav></div><div class="flex items-center gap-space-md"><div class="hidden md:flex items-center bg-surface-container-low px-space-md py-space-xs rounded-full shadow-[0_1px_4px_rgba(0,0,0,0.03)] focus-within:ring-2 focus-within:ring-secondary"><span class="material-symbols-outlined text-outline text-[18px] ml-space-xs">search</span><input class="bg-transparent border-0 outline-none font-body-sm text-body-sm text-on-surface placeholder:text-outline w-44 lg:w-60 text-right" placeholder="ابحث عن القواعد، الكلمات، الوحدات..." type="text"/></div><div class="flex items-center gap-space-sm"><div class="flex items-center gap-space-xs bg-secondary-fixed/50 px-space-md py-space-xs rounded-full"><span class="material-symbols-outlined text-secondary text-[20px]">local_fire_department</span><span class="font-label-md text-label-md text-on-secondary-fixed font-bold">12 يوم متواصل</span></div><div class="flex items-center gap-space-xs bg-tertiary-fixed/40 px-space-md py-space-xs rounded-full"><span class="material-symbols-outlined text-on-tertiary-fixed-variant text-[18px]">bolt</span><span class="font-label-md text-label-md text-on-tertiary-fixed-variant font-bold">1,450 XP</span></div></div><button aria-label="الإشعارات" class="relative p-space-sm rounded-full text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-1 left-1 w-2.5 h-2.5 bg-error rounded-full ring-2 ring-surface-container-lowest"></span></button><div class="flex items-center gap-space-sm pr-space-xs border-r border-outline-variant/30"><div class="hidden sm:flex flex-col text-left"><span class="font-label-lg text-label-lg text-on-surface font-bold text-right">أحمد علي</span><span class="font-label-sm text-label-sm text-on-surface-variant">3rd Secondary</span></div><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-secondary-container/50" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDG0JYBFR-dZrTJogWJO9gE75_U9FJiQERGRhDa0wfHZJMC9tdM1ak4XE04XogisUUns2U-MbSCZ001DCSUF9Dm9p8Ftfk3HmLLp5Ty0AfvdUazMvwFwLWES6Z6ZPis9M-qEpG6Ngda81Lesp0r0vtO5zbD6poF9hu7eXzuGqPmIgTNIwqpIRy4Ie5aZ0slq3hNELsjiccRfshoRHbYRGv8rjGulbMlUhE49Q0hY8U"/></div></div></div></header><main class="w-full pt-20 bg-surface min-h-[calc(100vh-18rem)]"><div class="flex flex-col w-full">
+<!-- Sub-Header Learning Ribbon: Context, Breadcrumb & Theatre Controls -->
+<div class="w-full bg-surface-container-lowest shadow-sm">
+<div class="max-w-[1520px] mx-auto px-gutter md:px-gutter-desktop py-space-sm flex flex-wrap items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<a class="flex items-center gap-space-xs text-on-surface-variant hover:text-secondary transition-colors font-label-md text-label-md" href="#">
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+<span>العودة للوحدة الرابعة</span>
+</a>
+<span class="text-outline-variant font-label-sm text-label-sm">/</span>
+<div class="flex items-center gap-space-xs">
+<span class="px-space-xs py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-bold">Unit 4</span>
+<span class="font-headline-sm text-headline-sm text-primary-container truncate font-bold">Past Perfect Continuous &amp; Common Mistakes in Exams</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm">
+<div class="hidden sm:flex items-center gap-space-xs bg-surface-container-low px-space-md py-space-xs rounded-full">
+<span class="material-symbols-outlined text-secondary text-[18px]">verified</span>
+<span class="font-label-md text-label-md text-on-surface-variant">شرح رسمي معتمد 2025</span>
+</div>
+<button class="flex items-center gap-space-xs px-space-md py-space-xs rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition-all" id="theatreModeBtn">
+<span class="material-symbols-outlined text-[18px]">crop_landscape</span>
+<span>وضع السينما</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Primary Workspace: 12-Column Responsive Layout -->
+<div class="max-w-[1520px] mx-auto w-full px-gutter md:px-gutter-desktop py-space-lg">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- Video Stage & Dynamic Workspace (8 Cols on Desktop) -->
+<section class="lg:col-span-8 flex flex-col gap-space-lg">
+<!-- Video Player Frame Container -->
+<div class="relative w-full rounded-xl overflow-hidden bg-primary-container shadow-xl">
+<!-- Aspect Ratio Box (16:9 Standard) -->
+<div class="relative aspect-video w-full bg-primary-container flex items-center justify-center overflow-hidden">
+<!-- Smart Board Classroom Visual Backdrop -->
+<div class="absolute inset-0 bg-gradient-to-t from-primary-container via-primary-container/70 to-transparent z-10 pointer-events-none"></div>
+<div class="absolute inset-0 flex items-center justify-between p-space-xl opacity-95">
+<!-- Digital Smart Board Display Canvas -->
+<div class="w-7/12 h-full flex flex-col justify-center space-y-space-md text-left z-0 select-none pl-space-md">
+<div class="inline-flex items-center gap-space-xs px-space-sm py-0.5 rounded bg-secondary/30 text-secondary-fixed font-label-sm text-label-sm w-fit">
+<span class="w-2 h-2 rounded-full bg-secondary-container animate-pulse"></span>
+<span>GRAMMAR MASTERCLASS</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-primary font-extrabold tracking-tight leading-snug">
+                  HAD + BEEN + V-ing
+                </h2>
+<div class="bg-surface-container-lowest/10 backdrop-blur-md p-space-md rounded-xl space-y-space-xs">
+<p class="font-body-md text-body-md text-primary-fixed-dim leading-relaxed font-semibold">
+                    • Emphasizes <span class="text-secondary-fixed underline">duration</span> before another event in the past.
+                  </p>
+<p class="font-body-sm text-body-sm text-outline-variant italic">
+                    "He was exhausted because he had been revising all night."
+                  </p>
+</div>
+</div>
+<!-- Mr. Shahdy Presenting Image -->
+<div class="w-5/12 h-full relative flex items-end justify-center z-0">
+<img alt="Mr. Shahdy Teacher Presentation" class="h-[90%] w-auto object-cover object-bottom drop-shadow-[0_20px_25px_rgba(0,0,0,0.6)] transform scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDG0JYBFR-dZrTJogWJO9gE75_U9FJiQERGRhDa0wfHZJMC9tdM1ak4XE04XogisUUns2U-MbSCZ001DCSUF9Dm9p8Ftfk3HmLLp5Ty0AfvdUazMvwFwLWES6Z6ZPis9M-qEpG6Ngda81Lesp0r0vtO5zbD6poF9hu7eXzuGqPmIgTNIwqpIRy4Ie5aZ0slq3hNELsjiccRfshoRHbYRGv8rjGulbMlUhE49Q0hY8U"/>
+<!-- Glowing Interactive Smart Pointer Tag -->
+<div class="absolute top-1/4 right-4 bg-secondary text-on-secondary px-space-sm py-1 rounded-full shadow-lg flex items-center gap-1 font-label-sm text-label-sm animate-bounce">
+<span class="material-symbols-outlined text-[16px]">touch_app</span>
+<span>لاحظ قاعدة المدة الزمانية!</span>
+</div>
+</div>
+</div>
+<!-- Interactive Pop-up Quiz Overlay Triggered at 22:10 -->
+<div class="absolute inset-0 z-30 bg-primary-container/90 backdrop-blur-md flex items-center justify-center p-space-md" id="quizOverlay">
+<div class="w-full max-w-xl bg-surface-container-lowest rounded-xl shadow-2xl p-space-lg flex flex-col gap-space-md relative transform transition-all">
+<!-- Quiz Banner Header -->
+<div class="flex items-center justify-between pb-space-xs border-b border-surface-container">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[24px]">psychology_alt</span>
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-bold block">سؤال التفاعل المباشر • 22:10</span>
+<span class="font-headline-sm text-headline-sm text-primary-container font-bold">اختبر فهمك للثانوية العامة</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs bg-tertiary-fixed/30 px-space-sm py-0.5 rounded-full">
+<span class="material-symbols-outlined text-on-tertiary-fixed-variant text-[16px]">military_tech</span>
+<span class="font-label-md text-label-md text-on-tertiary-fixed-variant font-bold">+20 XP</span>
+</div>
+</div>
+<!-- Question Prompt -->
+<div class="bg-surface-container-low p-space-md rounded-xl text-left" dir="ltr">
+<span class="font-label-sm text-label-sm text-secondary font-bold block mb-space-xs">Sentence Completion (Exam Style):</span>
+<p class="font-headline-sm text-headline-sm text-on-surface font-semibold leading-relaxed">
+                    “By the time the bell rang, the students <span class="inline-block border-b-2 border-dashed border-secondary px-space-md text-secondary font-bold font-mono">_______</span> for 40 minutes.”
+                  </p>
+</div>
+<!-- Multiple Choices -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm" dir="ltr">
+<!-- Choice A (Pre-selected Correct Demo) -->
+<button class="choice-btn group flex items-center justify-between p-space-md rounded-xl bg-tertiary-fixed/20 shadow-sm transition-all text-left">
+<div class="flex items-center gap-space-sm">
+<span class="w-7 h-7 rounded-full bg-on-tertiary-container text-on-tertiary font-label-md text-label-md flex items-center justify-center font-bold">A</span>
+<span class="font-body-md text-body-md font-bold text-on-surface">had been waiting</span>
+</div>
+<span class="material-symbols-outlined text-on-tertiary-container text-[20px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</button>
+<!-- Choice B -->
+<button class="choice-btn group flex items-center justify-between p-space-md rounded-xl bg-surface-container-low hover:bg-surface-container text-on-surface transition-all text-left">
+<div class="flex items-center gap-space-sm">
+<span class="w-7 h-7 rounded-full bg-surface-container-highest text-on-surface-variant group-hover:bg-primary-container group-hover:text-on-primary font-label-md text-label-md flex items-center justify-center font-bold">B</span>
+<span class="font-body-md text-body-md text-on-surface">were waiting</span>
+</div>
+</button>
+<!-- Choice C -->
+<button class="choice-btn group flex items-center justify-between p-space-md rounded-xl bg-surface-container-low hover:bg-surface-container text-on-surface transition-all text-left">
+<div class="flex items-center gap-space-sm">
+<span class="w-7 h-7 rounded-full bg-surface-container-highest text-on-surface-variant group-hover:bg-primary-container group-hover:text-on-primary font-label-md text-label-md flex items-center justify-center font-bold">C</span>
+<span class="font-body-md text-body-md text-on-surface">have waited</span>
+</div>
+</button>
+<!-- Choice D -->
+<button class="choice-btn group flex items-center justify-between p-space-md rounded-xl bg-surface-container-low hover:bg-surface-container text-on-surface transition-all text-left">
+<div class="flex items-center gap-space-sm">
+<span class="w-7 h-7 rounded-full bg-surface-container-highest text-on-surface-variant group-hover:bg-primary-container group-hover:text-on-primary font-label-md text-label-md flex items-center justify-center font-bold">D</span>
+<span class="font-body-md text-body-md text-on-surface">waited</span>
+</div>
+</button>
+</div>
+<!-- Instant Feedback Notification Box -->
+<div class="bg-tertiary-fixed/30 p-space-sm rounded-xl flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-on-tertiary-fixed-variant text-[22px]" style="font-variation-settings: 'FILL' 1;">celebration</span>
+<span class="font-label-lg text-label-lg text-on-tertiary-fixed-variant font-bold">إجابة ممتازة وصحيحة! +20 نقطة خبرة XP 🎉</span>
+</div>
+<div class="flex items-center gap-1 text-on-tertiary-fixed-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">volume_up</span>
+<span>تم التحقق</span>
+</div>
+</div>
+<!-- Question Modal Footer -->
+<div class="flex items-center justify-between pt-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant">التركيز على الاستمرارية قبل حدث الماضي المنتهي (The bell rang)</span>
+<button class="px-space-lg py-space-sm rounded-lg bg-secondary text-on-secondary font-label-md text-label-md font-bold hover:bg-on-secondary-container transition-all flex items-center gap-space-xs" onclick="document.getElementById('quizOverlay').classList.toggle('hidden')">
+<span>متابعة الشرح</span>
+<span class="material-symbols-outlined text-[16px]">play_arrow</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Video Player Controls Shelf (Hover & Sticky Dock) -->
+<div class="absolute bottom-0 inset-x-0 z-20 bg-gradient-to-t from-primary-container via-primary-container/80 to-transparent p-space-md flex flex-col gap-space-xs">
+<!-- Timeline Track with Chapter Markers -->
+<div class="relative w-full group py-space-xs cursor-pointer">
+<!-- Background Rail -->
+<div class="h-2 w-full bg-on-primary-container/30 rounded-full overflow-hidden relative">
+<!-- Progress Bar -->
+<div class="h-full bg-secondary-container rounded-full" style="width: 68%;"></div>
+</div>
+<!-- Color-Coded Chapter Markers (Milestones) -->
+<!-- Marker 1: Key Grammar Rules (04:15 - ~12%) -->
+<div class="absolute top-1/2 -translate-y-1/2 left-[12%] group/marker flex flex-col items-center">
+<div class="w-3 h-3 rounded-full bg-tertiary-fixed shadow-md ring-2 ring-primary-container"></div>
+<div class="absolute bottom-5 hidden group-hover/marker:flex bg-primary-container text-on-primary px-2 py-1 rounded text-label-sm font-label-sm whitespace-nowrap shadow-lg">
+                    قواعد الماضي التام المستمر (04:15)
+                  </div>
+</div>
+<!-- Marker 2: Common Mistakes (14:30 - ~42%) -->
+<div class="absolute top-1/2 -translate-y-1/2 left-[42%] group/marker flex flex-col items-center">
+<div class="w-3 h-3 rounded-full bg-secondary-container shadow-md ring-2 ring-primary-container"></div>
+<div class="absolute bottom-5 hidden group-hover/marker:flex bg-primary-container text-on-primary px-2 py-1 rounded text-label-sm font-label-sm whitespace-nowrap shadow-lg">
+                    أخطاء شائعة في الامتحانات (14:30)
+                  </div>
+</div>
+<!-- Marker 3: Interactive Pop-up Quiz (22:10 - ~68%) Active -->
+<div class="absolute top-1/2 -translate-y-1/2 left-[68%] group/marker flex flex-col items-center">
+<div class="w-4 h-4 rounded-full bg-secondary shadow-lg ring-2 ring-surface-container-lowest animate-pulse"></div>
+<div class="absolute bottom-5 flex bg-secondary text-on-secondary px-2 py-1 rounded text-label-sm font-label-sm whitespace-nowrap font-bold shadow-lg">
+                    كويز تفاعلي سريع (22:10)
+                  </div>
+</div>
+<!-- Marker 4: Summary & Homework (31:00 - ~90%) -->
+<div class="absolute top-1/2 -translate-y-1/2 left-[90%] group/marker flex flex-col items-center">
+<div class="w-3 h-3 rounded-full bg-outline-variant shadow-md ring-2 ring-primary-container"></div>
+<div class="absolute bottom-5 hidden group-hover/marker:flex bg-primary-container text-on-primary px-2 py-1 rounded text-label-sm font-label-sm whitespace-nowrap shadow-lg">
+                    الملخص والواجب المنزلي (31:00)
+                  </div>
+</div>
+</div>
+<!-- Playback Controls Dock -->
+<div class="flex items-center justify-between text-on-primary pt-space-xs">
+<div class="flex items-center gap-space-md">
+<button aria-label="Play/Pause" class="hover:text-secondary-fixed transition-colors flex items-center">
+<span class="material-symbols-outlined text-[28px]" style="font-variation-settings: 'FILL' 1;">pause</span>
+</button>
+<button aria-label="Skip backward 10s" class="hover:text-secondary-fixed transition-colors flex items-center">
+<span class="material-symbols-outlined text-[22px]">replay_10</span>
+</button>
+<button aria-label="Skip forward 10s" class="hover:text-secondary-fixed transition-colors flex items-center">
+<span class="material-symbols-outlined text-[22px]">forward_10</span>
+</button>
+<div class="flex items-center gap-space-xs text-outline-variant font-label-md text-label-md">
+<span class="text-on-primary font-bold">22:10</span>
+<span>/</span>
+<span>34:45</span>
+</div>
+</div>
+<div class="flex items-center gap-space-md">
+<!-- Fast speed dropdown trigger -->
+<button class="px-2 py-0.5 rounded bg-surface-container-highest/20 hover:bg-surface-container-highest/40 font-label-sm text-label-sm font-bold text-on-primary transition-colors">
+                    1.25x
+                  </button>
+<!-- Audio Mute/Volume -->
+<button aria-label="Volume" class="hover:text-secondary-fixed transition-colors flex items-center">
+<span class="material-symbols-outlined text-[22px]">volume_up</span>
+</button>
+<!-- Subtitles Closed Captions -->
+<button aria-label="Closed Captions" class="hover:text-secondary-fixed transition-colors flex items-center text-secondary-container">
+<span class="material-symbols-outlined text-[22px]">closed_caption</span>
+</button>
+<!-- Video Settings -->
+<button aria-label="Settings" class="hover:text-secondary-fixed transition-colors flex items-center">
+<span class="material-symbols-outlined text-[22px]">settings</span>
+</button>
+<!-- Fullscreen toggle -->
+<button aria-label="Fullscreen" class="hover:text-secondary-fixed transition-colors flex items-center">
+<span class="material-symbols-outlined text-[22px]">fullscreen</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Timeline Chapters Pill Carousel -->
+<div class="w-full bg-surface-container-lowest rounded-xl p-space-sm shadow-sm flex items-center gap-space-xs overflow-x-auto">
+<div class="px-space-xs py-1 text-on-surface-variant font-label-sm text-label-sm whitespace-nowrap flex items-center gap-1 font-bold">
+<span class="material-symbols-outlined text-[16px] text-secondary">bookmark</span>
+<span>فصول الحصة:</span>
+</div>
+<button class="px-space-md py-space-xs rounded-lg bg-surface-container-low hover:bg-surface-container font-label-sm text-label-sm text-on-surface flex items-center gap-space-xs whitespace-nowrap transition-colors">
+<span class="w-2 h-2 rounded-full bg-tertiary-fixed-dim"></span>
+<span>القواعد الأساسية (04:15)</span>
+</button>
+<button class="px-space-md py-space-xs rounded-lg bg-surface-container-low hover:bg-surface-container font-label-sm text-label-sm text-on-surface flex items-center gap-space-xs whitespace-nowrap transition-colors">
+<span class="w-2 h-2 rounded-full bg-secondary-container"></span>
+<span>أخطاء امتحانات شائعة (14:30)</span>
+</button>
+<button class="px-space-md py-space-xs rounded-lg bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-bold flex items-center gap-space-xs whitespace-nowrap shadow-sm">
+<span class="material-symbols-outlined text-[16px]">bolt</span>
+<span>كويز التفاعل (22:10)</span>
+</button>
+<button class="px-space-md py-space-xs rounded-lg bg-surface-container-low hover:bg-surface-container font-label-sm text-label-sm text-on-surface flex items-center gap-space-xs whitespace-nowrap transition-colors">
+<span class="w-2 h-2 rounded-full bg-outline"></span>
+<span>الملخص والتكليف (31:00)</span>
+</button>
+</div>
+<!-- Lower Section: Multi-Tab Interactive Deck -->
+<div class="w-full bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden">
+<!-- Tab Navigation Headers -->
+<div class="flex items-center border-b border-surface-container bg-surface-container-low/50 px-space-md pt-space-xs">
+<button class="tab-trigger active px-space-md py-space-md font-label-lg text-label-lg font-bold text-secondary border-b-2 border-secondary transition-all flex items-center gap-space-xs" id="tabBtnNotes" onclick="switchLessonTab('notes')">
+<span class="material-symbols-outlined text-[20px]">sticky_note_2</span>
+<span>ملخص الدرس والملاحظات (Smart Notes)</span>
+</button>
+<button class="tab-trigger px-space-md py-space-md font-label-lg text-label-lg font-semibold text-on-surface-variant hover:text-on-surface transition-all flex items-center gap-space-xs" id="tabBtnDocs" onclick="switchLessonTab('docs')">
+<span class="material-symbols-outlined text-[20px]">file_download</span>
+<span>الملحقات والواجب (PDF Worksheets)</span>
+<span class="w-5 h-5 rounded-full bg-secondary text-on-secondary text-[11px] flex items-center justify-center font-bold">2</span>
+</button>
+<button class="tab-trigger px-space-md py-space-md font-label-lg text-label-lg font-semibold text-on-surface-variant hover:text-on-surface transition-all flex items-center gap-space-xs" id="tabBtnQA" onclick="switchLessonTab('qa')">
+<span class="material-symbols-outlined text-[20px]">forum</span>
+<span>اسأل مستر شهدي (Q&amp;A)</span>
+<span class="w-2 h-2 rounded-full bg-on-tertiary-container"></span>
+</button>
+</div>
+<!-- Tab Content Panes -->
+<div class="p-space-lg">
+<!-- Pane 1: Smart Notes & Mind Rules -->
+<div class="flex flex-col gap-space-lg" id="tabContentNotes">
+<!-- Mnemonic Card from Mr. Shahdy -->
+<div class="bg-secondary-fixed/30 rounded-xl p-space-md flex flex-col md:flex-row items-start gap-space-md">
+<div class="p-space-xs rounded-full bg-secondary text-on-secondary">
+<span class="material-symbols-outlined text-[24px]">lightbulb</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<span class="font-headline-sm text-headline-sm text-on-secondary-fixed font-bold">كبسولة مستر شهدي الذهبية 💡</span>
+<p class="font-body-md text-body-md text-on-secondary-fixed leading-relaxed">
+                    لا تستخدم زمن الماضي التام المستمر (Past Perfect Continuous) مع أفعال الحالة (State Verbs) مثل: <span class="font-bold underline" dir="ltr">know, like, believe, belong</span>! في هذه الحالة استخدم الماضي التام البسيط (Past Perfect Simple) حتى وإن ذُكرت المدة الزمنية في الجملة.
+                  </p>
+</div>
+</div>
+<!-- Rule Breakdowns in Bento Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<!-- Rule Block 1 -->
+<div class="bg-surface-container-low p-space-md rounded-xl flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-lg text-label-lg text-primary-container font-bold">التكوين والصياغة (Form)</span>
+<span class="font-label-sm text-label-sm text-on-tertiary-container font-mono font-bold">Had + been + v-ing</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                    يُستخدم للتعبير عن حدث استمر لفترة معينة في الماضي قبل وقوع حدث آخر أو وقت محدد في الماضي.
+                  </p>
+<div class="bg-surface-container-lowest p-space-sm rounded-lg font-mono text-[13px] text-on-surface" dir="ltr">
+                    They had been driving for 3 hours before they reached Alexandria.
+                  </div>
+</div>
+<!-- Rule Block 2 -->
+<div class="bg-surface-container-low p-space-md rounded-xl flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-lg text-label-lg text-primary-container font-bold">الكلمات الدالة الرئيسية (Key Keywords)</span>
+<span class="font-label-sm text-label-sm text-secondary font-mono font-bold">Exam Triggers</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                    عند رؤية <span class="font-bold text-on-surface">for + time</span> مصحوبة بـ <span class="font-bold text-on-surface">By the time</span> أو <span class="font-bold text-on-surface">When</span> مع حدث ماضٍ آخر، فالأولوية للماضي التام المستمر.
+                  </p>
+<div class="bg-surface-container-lowest p-space-sm rounded-lg font-mono text-[13px] text-on-surface" dir="ltr">
+                    How long had she been waiting before the doctor arrived?
+                  </div>
+</div>
+</div>
+<!-- Teacher Personal Audio Note Snippet -->
+<div class="bg-surface-container-low rounded-xl p-space-md flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-primary-container text-on-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[22px]">mic</span>
+</div>
+<div>
+<span class="font-label-lg text-label-lg text-primary-container font-bold block">ملاحظة صوتية سريعة من مستر شهدي</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">توضيح الفرق بين Since و For مع الأزمنة التامة المستمرة (01:45)</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm">
+<!-- Simulated Audio Waveform -->
+<div class="hidden sm:flex items-center gap-1 h-6">
+<span class="w-1 h-4 bg-secondary rounded-full animate-pulse"></span>
+<span class="w-1 h-6 bg-secondary rounded-full"></span>
+<span class="w-1 h-3 bg-secondary rounded-full animate-pulse"></span>
+<span class="w-1 h-5 bg-secondary rounded-full"></span>
+<span class="w-1 h-2 bg-secondary rounded-full"></span>
+</div>
+<button class="px-space-md py-space-xs rounded-lg bg-secondary text-on-secondary font-label-sm text-label-sm font-bold flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[16px]">play_arrow</span>
+<span>تشغيل الصوت</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Pane 2: PDF Worksheets & Homework Downloads -->
+<div class="hidden flex-col gap-space-md" id="tabContentDocs">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<!-- PDF Sheet 1 -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col justify-between gap-space-md">
+<div class="flex items-start gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-error/10 text-error flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[28px]">picture_as_pdf</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-primary-container font-bold">مذكرة الشرح الشاملة والخرائط الذهنية</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-1">تشمل جداول الفروق الدقيقة وأمثلة النماذج الاسترشادية للوزارة • 14 صفحة • 4.2 MB</span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-xs border-t border-surface-container">
+<span class="font-label-sm text-label-sm text-on-tertiary-container font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+<span>نسخة ملونة عالية الجودة</span>
+</span>
+<button class="px-space-md py-space-xs rounded-lg bg-primary-container text-on-primary hover:bg-on-primary-fixed-variant font-label-md text-label-md font-bold flex items-center gap-space-xs transition-colors shadow-sm">
+<span class="material-symbols-outlined text-[18px]">download</span>
+<span>تحميل مذكرة الشرح الشاملة PDF 📄</span>
+</button>
+</div>
+</div>
+<!-- PDF Sheet 2 -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col justify-between gap-space-md">
+<div class="flex items-start gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-secondary-fixed/50 text-secondary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[28px]">assignment</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-primary-container font-bold">شيت تدريبات الواجب المنزلي (Homework Drill)</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-1">60 سؤال اختيار من متعدد + أسئلة المقال المقترحة مع نموذج إجابة • 2.8 MB</span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-xs border-t border-surface-container">
+<span class="font-label-sm text-label-sm text-error font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">schedule</span>
+<span>موعد التسليم: الأحد القادم</span>
+</span>
+<button class="px-space-md py-space-xs rounded-lg bg-secondary text-on-secondary hover:bg-on-secondary-container font-label-md text-label-md font-bold flex items-center gap-space-xs transition-colors shadow-sm">
+<span class="material-symbols-outlined text-[18px]">cloud_download</span>
+<span>تحميل شيت تدريبات الواجب المنزلي 📝</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Pane 3: Q&A Student Feed -->
+<div class="hidden flex-col gap-space-md" id="tabContentQA">
+<!-- Ask Question Input Bar -->
+<div class="flex gap-space-sm bg-surface-container-low p-space-sm rounded-xl">
+<input class="flex-1 bg-transparent border-0 outline-none font-body-sm text-body-sm text-on-surface placeholder:text-outline px-space-sm" placeholder="اكتب سؤالك لمستر شهدي أو للمساعدين الأكاديميين هنا..." type="text"/>
+<button class="px-space-lg py-space-sm rounded-lg bg-primary-container text-on-primary font-label-md text-label-md font-bold flex items-center gap-space-xs hover:bg-on-primary-fixed-variant transition-colors shadow-sm">
+<span>إرسال السؤال</span>
+<span class="material-symbols-outlined text-[16px]">send</span>
+</button>
+</div>
+<!-- Question Feed Item 1 -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-secondary-fixed flex items-center justify-center font-bold text-on-secondary-fixed font-label-md text-label-md">م.ع</div>
+<span class="font-label-lg text-label-lg text-on-surface font-bold">مريم عصام (طالبة بالصف الثالث)</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">منذ 3 ساعات</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface">
+                  لو الجملة فيها "All morning" وفي نفس الوقت الفعل من أفعال الحواس زي feel أو smell، اختار التام البسيط ولا المستمر؟
+                </p>
+<!-- Instructor Answer Nested -->
+<div class="mt-space-xs bg-surface-container-lowest p-space-md rounded-xl flex items-start gap-space-sm">
+<img alt="Mr. Shahdy Avatar" class="w-9 h-9 rounded-full object-cover ring-2 ring-secondary shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDG0JYBFR-dZrTJogWJO9gE75_U9FJiQERGRhDa0wfHZJMC9tdM1ak4XE04XogisUUns2U-MbSCZ001DCSUF9Dm9p8Ftfk3HmLLp5Ty0AfvdUazMvwFwLWES6Z6ZPis9M-qEpG6Ngda81Lesp0r0vtO5zbD6poF9hu7eXzuGqPmIgTNIwqpIRy4Ie5aZ0slq3hNELsjiccRfshoRHbYRGv8rjGulbMlUhE49Q0hY8U"/>
+<div class="flex flex-col gap-1 w-full">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-md text-label-md text-primary-container font-bold">مستر شهدي (المعلم)</span>
+<span class="material-symbols-outlined text-[16px] text-on-tertiary-container" style="font-variation-settings: 'FILL' 1;">verified</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">تم الرد الصوتي • 00:38</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                      سؤال ذكي يا مريم! أفعال الحواس والشعور لا تُوضع في الاستمرار نهائياً. نختار Past Perfect Simple مباشرة (had felt وليس had been feeling). استمعي للتسجيل للتفاصيل:
+                    </p>
+<div class="flex items-center gap-space-xs bg-surface-container-low px-space-sm py-1 rounded-lg w-fit mt-1">
+<button class="material-symbols-outlined text-[18px] text-secondary">play_circle</button>
+<span class="font-label-sm text-label-sm font-mono text-on-surface">00:38 / تسجيل صوتي</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Right Syllabus & Course Track Rail (4 Cols on Desktop) -->
+<aside class="lg:col-span-4 flex flex-col gap-space-md">
+<!-- Module Card Info -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="px-space-sm py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-bold">الوحدة الحالية</span>
+<span class="font-label-md text-label-md text-on-tertiary-container font-bold">نسبة إنجازك 65%</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary-container font-extrabold">
+            Unit 4: Advanced Tenses &amp; Structures
+          </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            الأزمنة المركبة، أدوات الربط الزمنية، واستراتيجيات أسئلة المتفوقين في ثانوية 2025.
+          </p>
+<!-- Progress Bar -->
+<div class="w-full bg-surface-container-high h-2 rounded-full overflow-hidden mt-space-xs">
+<div class="bg-secondary-container h-full rounded-full" style="width: 65%;"></div>
+</div>
+</div>
+<!-- Lessons Hierarchy List Accordion / Navigation -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden flex flex-col">
+<div class="p-space-md bg-surface-container-low/60 flex items-center justify-between border-b border-surface-container">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[20px]">format_list_numbered_rtl</span>
+<span class="font-label-lg text-label-lg text-primary-container font-bold">قائمة دروس الوحدة (4 حصص)</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">2 من 4 مكتملة</span>
+</div>
+<div class="divide-y divide-surface-container/50 flex flex-col">
+<!-- Lesson 1 (Completed) -->
+<a class="group p-space-md flex items-center justify-between hover:bg-surface-container-low transition-colors" href="#">
+<div class="flex items-start gap-space-sm">
+<div class="w-7 h-7 rounded-full bg-tertiary-fixed text-on-tertiary-fixed-variant flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">check</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface group-hover:text-secondary font-bold transition-colors">Lesson 1: Past Simple vs Past Continuous</span>
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm mt-0.5">
+<span class="material-symbols-outlined text-[14px]">videocam</span>
+<span>28 دقيقة</span>
+<span>•</span>
+<span class="text-on-tertiary-container font-bold">درجة الكويز: 100%</span>
+</div>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline-variant text-[20px]">arrow_back_ios</span>
+</a>
+<!-- Lesson 2 (Completed) -->
+<a class="group p-space-md flex items-center justify-between hover:bg-surface-container-low transition-colors" href="#">
+<div class="flex items-start gap-space-sm">
+<div class="w-7 h-7 rounded-full bg-tertiary-fixed text-on-tertiary-fixed-variant flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">check</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface group-hover:text-secondary font-bold transition-colors">Lesson 2: Past Perfect Simple Mastery</span>
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm mt-0.5">
+<span class="material-symbols-outlined text-[14px]">videocam</span>
+<span>36 دقيقة</span>
+<span>•</span>
+<span class="text-on-tertiary-container font-bold">درجة الكويز: 95%</span>
+</div>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline-variant text-[20px]">arrow_back_ios</span>
+</a>
+<!-- Lesson 3 (Current Active & In Progress) -->
+<div class="p-space-md bg-secondary-fixed/20 flex items-center justify-between">
+<div class="flex items-start gap-space-sm">
+<div class="w-7 h-7 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center shrink-0 mt-0.5 shadow-sm animate-pulse">
+<span class="material-symbols-outlined text-[18px]">play_arrow</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-lg text-label-lg text-primary-container font-bold">Lesson 3: Past Perfect Continuous &amp; Common Mistakes</span>
+<span class="px-space-xs py-0.2 rounded bg-secondary text-on-secondary font-label-sm text-label-sm font-bold">الآن</span>
+</div>
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm mt-0.5">
+<span class="material-symbols-outlined text-[14px]">timelapse</span>
+<span class="text-secondary font-bold">متبقي 12 دقيقة</span>
+<span>•</span>
+<span>34 دقيقة كلي</span>
+</div>
+</div>
+</div>
+<span class="material-symbols-outlined text-secondary text-[20px]">graphic_eq</span>
+</div>
+<!-- Lesson 4 (Locked Prerequisite) -->
+<div class="p-space-md opacity-60 flex items-center justify-between bg-surface-container-low/30">
+<div class="flex items-start gap-space-sm">
+<div class="w-7 h-7 rounded-full bg-surface-container-highest text-on-surface-variant flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[16px]">lock</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface-variant font-semibold">Lesson 4: Comprehensive Exam on Unit 4 (وزاري)</span>
+<div class="flex items-center gap-space-xs text-outline font-label-sm text-label-sm mt-0.5">
+<span>يُفتح فور إتمام الحصة والواجب المنزلي</span>
+</div>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline text-[18px]">lock_clock</span>
+</div>
+</div>
+<!-- Bottom Action in Syllabus: Exam Simulation -->
+<div class="p-space-md bg-surface-container-low border-t border-surface-container flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[20px]">rewarded_ads</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">مكافأة إتمام الوحدة: <b class="text-primary-container">+150 XP</b></span>
+</div>
+<button class="text-secondary font-label-sm text-label-sm font-bold hover:underline">
+              عرض تفاصيل الامتحان ←
+            </button>
+</div>
+</div>
+<!-- Instructor Motivation Widget -->
+<div class="bg-primary-container text-on-primary rounded-xl p-space-md flex items-center gap-space-md shadow-md">
+<img alt="Mr. Shahdy Mini Avatar" class="w-14 h-14 rounded-full object-cover ring-2 ring-secondary-container shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDG0JYBFR-dZrTJogWJO9gE75_U9FJiQERGRhDa0wfHZJMC9tdM1ak4XE04XogisUUns2U-MbSCZ001DCSUF9Dm9p8Ftfk3HmLLp5Ty0AfvdUazMvwFwLWES6Z6ZPis9M-qEpG6Ngda81Lesp0r0vtO5zbD6poF9hu7eXzuGqPmIgTNIwqpIRy4Ie5aZ0slq3hNELsjiccRfshoRHbYRGv8rjGulbMlUhE49Q0hY8U"/>
+<div class="flex flex-col gap-0.5">
+<span class="font-label-sm text-label-sm text-secondary-fixed font-bold">كلمة مستر شهدي لك:</span>
+<p class="font-body-sm text-body-sm text-surface-container-high leading-snug">
+              "الوحدة دي أساس 6 درجات في الامتحان الوزاري. ركّز في الكويزات التفاعلية ومتفوتش ثانية واحدة!"
+            </p>
+</div>
+</div>
+</aside>
+</div>
+</div>
+</div>
+<script>
+  function switchLessonTab(tabName) {
+    // Hide all tabs
+    const notes = document.getElementById('tabContentNotes');
+    const docs = document.getElementById('tabContentDocs');
+    const qa = document.getElementById('tabContentQA');
+    
+    const btnNotes = document.getElementById('tabBtnNotes');
+    const btnDocs = document.getElementById('tabBtnDocs');
+    const btnQA = document.getElementById('tabBtnQA');
+
+    notes.classList.add('hidden');
+    notes.classList.remove('flex');
+    docs.classList.add('hidden');
+    docs.classList.remove('flex');
+    qa.classList.add('hidden');
+    qa.classList.remove('flex');
+
+    btnNotes.classList.remove('text-secondary', 'border-b-2', 'border-secondary', 'font-bold');
+    btnNotes.classList.add('text-on-surface-variant', 'font-semibold');
+    btnDocs.classList.remove('text-secondary', 'border-b-2', 'border-secondary', 'font-bold');
+    btnDocs.classList.add('text-on-surface-variant', 'font-semibold');
+    btnQA.classList.remove('text-secondary', 'border-b-2', 'border-secondary', 'font-bold');
+    btnQA.classList.add('text-on-surface-variant', 'font-semibold');
+
+    if (tabName === 'notes') {
+      notes.classList.remove('hidden');
+      notes.classList.add('flex');
+      btnNotes.classList.add('text-secondary', 'border-b-2', 'border-secondary', 'font-bold');
+      btnNotes.classList.remove('text-on-surface-variant', 'font-semibold');
+    } else if (tabName === 'docs') {
+      docs.classList.remove('hidden');
+      docs.classList.add('flex');
+      btnDocs.classList.add('text-secondary', 'border-b-2', 'border-secondary', 'font-bold');
+      btnDocs.classList.remove('text-on-surface-variant', 'font-semibold');
+    } else if (tabName === 'qa') {
+      qa.classList.remove('hidden');
+      qa.classList.add('flex');
+      btnQA.classList.add('text-secondary', 'border-b-2', 'border-secondary', 'font-bold');
+      btnQA.classList.remove('text-on-surface-variant', 'font-semibold');
+    }
+  }
+
+  // Interactive Quiz Option Clicks
+  document.querySelectorAll('.choice-btn').forEach(btn => {
+    btn.addEventListener('click', function() {
+      // Toggle visual response state
+      this.classList.add('scale-[1.02]');
+      setTimeout(() => this.classList.remove('scale-[1.02]'), 150);
+    });
+  });
+</script></main><footer class="w-full bg-surface-container-lowest shadow-[0_-1px_8px_rgba(0,0,0,0.03)] mt-space-xl"><div class="w-full px-gutter-desktop mx-auto py-space-xl"><div class="grid grid-cols-1 md:grid-cols-4 gap-space-xl mb-space-xl"><div class="flex flex-col gap-space-sm md:col-span-1"><div class="flex items-center gap-space-sm"><img alt="Mr. Shahdy English Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAScWzEgllUJDfLziy-xGdMAYs_LF3WOGDlZaVZhROVTBjGqtUsm3oF0bWXyQzB1C0bcXe74zSw37ODaBTfVr7T7k3gYkMbMb4r4vHL-QdskgUO-Vc3nIF2FaatZopRNxL9bRnGZkXMA0fwVrPkchuSBN7G48Wclst-16yX1bqJwnfRJ7YY8ibznWdE9xbHj1hFOAX5JWLmIiHxU0SM4GtiwcGIubHPQkKa0k9Wwqk"/><span class="font-headline-sm text-headline-sm text-primary-container font-bold">Mr. Shahdy</span></div><p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">المنصة الأقوى لطلاب الثانوية العامة والتأسيس اللغوي المتقدم مع مستر شهدي. تدريبات دورية وشرح تفاعلي وبنوك أسئلة وزارية معتمدة.</p><div class="flex items-center gap-space-sm mt-space-sm"><a aria-label="Community Support" class="p-space-sm rounded-full bg-surface-container-low text-on-surface-variant hover:bg-secondary-container hover:text-on-secondary-container transition-colors" href="#"><span class="material-symbols-outlined text-[18px]">forum</span></a><a aria-label="Broadcast Announcements" class="p-space-sm rounded-full bg-surface-container-low text-on-surface-variant hover:bg-secondary-container hover:text-on-secondary-container transition-colors" href="#"><span class="material-symbols-outlined text-[18px]">campaign</span></a><a aria-label="Learning Video Archive" class="p-space-sm rounded-full bg-surface-container-low text-on-surface-variant hover:bg-secondary-container hover:text-on-secondary-container transition-colors" href="#"><span class="material-symbols-outlined text-[18px]">smart_display</span></a></div></div><div class="flex flex-col gap-space-sm"><span class="font-label-lg text-label-lg text-primary-container font-bold">المنهج الدراسي (Syllabus)</span><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-secondary transition-colors" href="#">شرح وحدات الصف الثالث الثانوي</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-secondary transition-colors" href="#">كبسولات القواعد المتقدمة (Grammar Drill)</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-secondary transition-colors" href="#">قاموس الكلمات والاشتقاقات الوزارية</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-secondary transition-colors" href="#">قصة العام ونماذج المقال (Writing Mastery)</a></div><div class="flex flex-col gap-space-sm"><span class="font-label-lg text-label-lg text-primary-container font-bold">الدعم والمساعدة (Support)</span><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-secondary transition-colors" href="#">فريق المساعدين والدعم الأكاديمي</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-secondary transition-colors" href="#">طريقة تفعيل الأكواد والحصص</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-secondary transition-colors" href="#">الأسئلة الشائعة والمشاكل التقنية</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-secondary transition-colors" href="#">مركز تحميل المذكرات PDF</a></div><div class="flex flex-col gap-space-sm"><span class="font-label-lg text-label-lg text-primary-container font-bold">ساعات العمل والاتصال</span><div class="bg-surface-container-low p-space-md rounded-xl flex flex-col gap-space-xs"><div class="flex items-center gap-space-xs text-on-surface-variant font-body-sm text-body-sm"><span class="material-symbols-outlined text-[18px] text-secondary">support_agent</span><span>خط الدعم الفني: 10:00 ص - 10:00 م</span></div><div class="flex items-center gap-space-xs text-on-surface-variant font-body-sm text-body-sm"><span class="material-symbols-outlined text-[18px] text-on-tertiary-container">chat</span><span>خدمة واتساب المباشرة للطلاب وأولياء الأمور</span></div></div></div></div><div class="pt-space-lg border-t border-outline-variant/30 flex flex-col sm:flex-row items-center justify-between gap-space-md text-on-surface-variant font-body-sm text-body-sm"><p>© 2025 منصة مستر شهدي للغة الإنجليزية. جميع الحقوق محفوظة لطلابنا الأعزاء.</p><div class="flex items-center gap-space-lg"><a class="hover:text-on-surface transition-colors" href="#">الشروط والأحكام</a><a class="hover:text-on-surface transition-colors" href="#">سياسة الخصوصية</a><a class="hover:text-on-surface transition-colors" href="#">ميثاق الشرف الأكاديمي</a></div></div></div></footer></body></html>

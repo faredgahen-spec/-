@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+
+<html dir="rtl" lang="ar"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "surface-container-high": "#deebe7", "surface-container-highest": "#d9e5e2", "surface": "#f0fcf8", "on-secondary-fixed-variant": "#005142", "error": "#ba1a1a", "surface-tint": "#236959", "on-primary": "#ffffff", "on-background": "#131e1c", "on-tertiary": "#ffffff", "surface-container-low": "#eaf6f3", "on-error": "#ffffff", "primary-fixed-dim": "#90d4bf", "error-container": "#ffdad6", "on-primary-container": "#8dd0bc", "secondary-container": "#9af0d7", "primary": "#004235", "on-surface": "#131e1c", "on-primary-fixed": "#002019", "on-primary-fixed-variant": "#005142", "primary-container": "#0f5b4b", "outline": "#6f7975", "inverse-surface": "#273330", "primary-fixed": "#abf0db", "surface-container": "#e4f1ed", "secondary": "#006b58", "on-secondary-fixed": "#002019", "background": "#f0fcf8", "on-tertiary-container": "#4f3e00", "tertiary-fixed": "#ffe088", "on-surface-variant": "#3f4945", "outline-variant": "#bfc9c4", "on-tertiary-fixed": "#241a00", "secondary-fixed-dim": "#81d6bf", "surface-dim": "#d0ddd9", "secondary-fixed": "#9df3da", "on-secondary-container": "#05705c", "on-secondary": "#ffffff", "inverse-primary": "#90d4bf", "surface-container-lowest": "#ffffff", "surface-bright": "#f0fcf8", "surface-variant": "#d9e5e2", "on-error-container": "#93000a", "tertiary": "#735c00", "tertiary-container": "#cca830", "inverse-on-surface": "#e7f3f0", "tertiary-fixed-dim": "#e9c349", "on-tertiary-fixed-variant": "#574500" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "margin-tablet": "2rem", "space-xl": "2.5rem", "space-xs": "0.25rem", "space-sm": "0.5rem", "space-lg": "1.5rem", "margin-desktop": "3rem", "gutter-desktop": "1.5rem", "margin": "1rem", "gutter": "1rem", "space-md": "1rem" }, fontFamily: { "label-md": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "title-md": ["Plus Jakarta Sans"], "title-lg": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "display-mobile": ["Newsreader"], "headline-sm": ["Newsreader"], "display": ["Newsreader"], "body-md": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Newsreader"], "headline-lg": ["Newsreader"], "label-lg": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "headline-md": ["Newsreader"] }, fontSize: { "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }], "label-sm": ["11px", { "lineHeight": "14px", "fontWeight": "500" }], "title-md": ["17px", { "lineHeight": "24px", "fontWeight": "600" }], "title-lg": ["20px", { "lineHeight": "28px", "fontWeight": "700" }], "body-lg": ["16px", { "lineHeight": "26px", "fontWeight": "400" }], "display-mobile": ["34px", { "lineHeight": "42px", "letterSpacing": "-0.01em", "fontWeight": "500" }], "headline-sm": ["22px", { "lineHeight": "30px", "fontWeight": "600" }], "display": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "500" }], "body-md": ["14px", { "lineHeight": "22px", "fontWeight": "400" }], "headline-lg-mobile": ["26px", { "lineHeight": "34px", "fontWeight": "500" }], "headline-lg": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.01em", "fontWeight": "500" }], "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }], "body-sm": ["13px", { "lineHeight": "18px", "fontWeight": "400" }], "headline-md": ["28px", { "lineHeight": "36px", "fontWeight": "500" }] } } } }</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-on-surface flex flex-col min-h-screen">
+      <div class="bg-primary-container text-on-primary text-xs py-1.5 px-4 flex justify-between items-center select-none">
+        <a href="../index.html" class="flex items-center gap-1 hover:underline font-bold">
+          <span class="material-symbols-outlined text-sm">arrow_forward</span>
+          الرجوع للمنصة الرئيسية
+        </a>
+        <span class="opacity-80">عيادة الزهراء للعلاج الطبيعي والتأهيل</span>
+      </div>
+    <header class="fixed top-0 w-full z-50 pt-safe bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-margin flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm"><img alt="Al-Zahraa Clinic Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDLLLNwm9POj4U1R2QG4uO98l8BBYJUeTlUhXAxw_fEW05-fDdOIcVN6sm2CS4HmeJVc-HhgG4UaRi9t8By_FYU8tA4QM-hA_gpJmGQfVX8vasKTqyrUc10TRXNnTlDf8pG4F5GATD6LaocHTvb5n-au1T0Hk8zjaPbrm9jLmU7eKmfH9OYJMQVNDUJI6zn0wu_Ll3Y1G_1Y4i2AOKiDdPR1tOQxLZYzd_H21d4im8"/><div class="flex flex-col"><span class="font-title-md text-title-md text-primary leading-tight">عيادة الزهراء</span><span class="font-label-sm text-label-sm text-on-surface-variant">Clinic Landing</span></div></div><div class="flex items-center gap-space-xs"><a aria-label="الاتصال بالعيادة" class="min-h-[44px] min-w-[44px] flex items-center justify-center rounded-full bg-surface-container hover:bg-surface-container-high transition-colors text-primary" href="tel:+966500000000"><span class="material-symbols-outlined text-[20px]">call</span></a><a aria-label="محادثة واتساب مباشرة" class="min-h-[44px] min-w-[44px] flex items-center justify-center rounded-full bg-surface-container hover:bg-surface-container-high transition-colors text-secondary" href="https://wa.me/966500000000"><span class="material-symbols-outlined text-[20px]">chat</span></a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center mr-space-xs"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex flex-col relative w-full pt-16 pb-28 bg-surface"><div class="flex flex-col w-full text-on-surface">
+<!-- TOP HERO REASSURANCE & IDENTITY SECTION -->
+<section class="relative px-margin pt-space-md pb-space-lg overflow-hidden">
+<!-- Ambient organic glow -->
+<div class="absolute -top-12 -left-12 w-64 h-64 rounded-full bg-secondary-container/30 blur-3xl pointer-events-none"></div>
+<div class="absolute top-32 -right-16 w-56 h-56 rounded-full bg-primary-fixed/20 blur-2xl pointer-events-none"></div>
+<div class="relative flex flex-col items-start gap-space-sm">
+<!-- Trust Badge -->
+<div class="inline-flex items-center gap-space-xs px-space-sm py-1.5 rounded-full bg-surface-container-low shadow-sm">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary animate-pulse"></span>
+<span class="font-label-sm text-label-sm text-primary font-bold">طب نبوي معقم بأحدث المعايير الطبية والتأهيلية</span>
+</div>
+<!-- Main Headline -->
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-primary font-bold leading-tight mt-space-xs">
+        استعد حريتك في الحركة وعِش يومك بلا ألم
+      </h1>
+<!-- Subtitle -->
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+        عيادة الزهراء: الجمع المتكامل والآمن بين الحجامة الطبية المعقمة وبرامج العلاج الطبيعي والتأهيل الحركي بإشراف أخصائيين معتمدين.
+      </p>
+<!-- Trust Ribbon Chips -->
+<div class="flex flex-wrap gap-space-xs mt-space-xs">
+<div class="flex items-center gap-1.5 px-space-sm py-1 rounded-lg bg-surface-container-high text-primary">
+<span class="material-symbols-outlined text-[16px] text-secondary" style="font-variation-settings: 'FILL' 1;">verified</span>
+<span class="font-label-sm text-label-sm">أدوات 100% استخدام لمرة واحدة</span>
+</div>
+<div class="flex items-center gap-1.5 px-space-sm py-1 rounded-lg bg-surface-container-high text-primary">
+<span class="material-symbols-outlined text-[16px] text-secondary" style="font-variation-settings: 'FILL' 1;">diversity_1</span>
+<span class="font-label-sm text-label-sm">أقسام مستقلة للرجال والنساء</span>
+</div>
+<div class="flex items-center gap-1.5 px-space-sm py-1 rounded-lg bg-surface-container-high text-primary">
+<span class="material-symbols-outlined text-[16px] text-secondary" style="font-variation-settings: 'FILL' 1;">clinical_notes</span>
+<span class="font-label-sm text-label-sm">خطة علاجية مخصصة لكل مريض</span>
+</div>
+</div>
+<!-- Jump to booking anchor -->
+<a class="w-full mt-space-sm flex items-center justify-between p-space-sm rounded-xl bg-surface-container-low text-primary shadow-sm hover:bg-surface-container transition-all" href="#quick-booking">
+<div class="flex items-center gap-space-xs">
+<span class="w-8 h-8 rounded-lg bg-primary-container text-on-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">calendar_today</span>
+</span>
+<span class="font-label-lg text-label-lg font-bold">احجز موعدك خلال دقيقة واحدة</span>
+</div>
+<span class="material-symbols-outlined text-primary text-[20px]">arrow_downward</span>
+</a>
+</div>
+</section>
+<!-- CLINICAL VISUAL STORY CARD (IMAGE) -->
+<section class="px-margin mb-space-lg">
+<div class="relative w-full h-44 rounded-xl overflow-hidden shadow-md">
+<img class="w-full h-full object-cover" data-alt="A pristine, serene medical wellness clinic suite in soft warm tones with sterilized glass cupping jars, warm ambient lighting, clinical hygienic equipment, clean mint towels, and minimalist bamboo details representing holistic Arab prophetic medicine." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDmyVphB9gyxj1xmirSpkrxC_1XdC2OnMOrXPnGX2MuYruwDqpTm3qDGUeKsEOvtfzbhi97D9yC4Welq4O3AP6QoLlAu3ul8GuMZu5QqNPtOsZEqlSSggz3YxyWl4bcXW4OAyNnVqpi5B-2b6YkOYQFhfVc77yUkCSQUVSJlz_uKIXgvkx2Uhm7PYPpqBmlgkXP317KoklTlgaqcBV5cIvdbIXAENlMNxra8higA2Y"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-primary/20 to-transparent flex items-end p-space-md">
+<div class="flex items-center justify-between w-full text-on-primary">
+<div>
+<span class="font-label-sm text-label-sm opacity-90 block">رعاية سريرية بروح إنسانية</span>
+<span class="font-title-md text-title-md font-bold">جلسات هادئة تخفف التوتر والألم المزمن</span>
+</div>
+<span class="px-space-sm py-1 rounded-full bg-on-primary/20 backdrop-blur-md text-on-primary font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">health_and_safety</span> مرخص رسمياً
+          </span>
+</div>
+</div>
+</div>
+</section>
+<!-- INTERACTIVE DIRECT BOOKING CARD -->
+<section class="px-margin mb-space-xl scroll-mt-20" id="quick-booking">
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-xl flex flex-col gap-space-md">
+<!-- Form Header -->
+<div class="flex items-start justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-secondary font-bold tracking-wider block">حجز مباشر وفوري</span>
+<h2 class="font-title-lg text-title-lg text-primary font-bold">بطاقة طلب موعد تشخيص وعلاج</h2>
+</div>
+<span class="w-10 h-10 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[22px]">event_available</span>
+</span>
+</div>
+<!-- Service Selection Pills -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-md text-label-md text-on-surface font-semibold">1. اختر الخدمة الطبية المطلوبة:</label>
+<div class="grid grid-cols-1 gap-2" id="service-options">
+<button class="service-chip active flex items-center justify-between p-space-sm rounded-lg bg-surface-container-low text-primary transition-all text-right group" data-service="cupping" type="button">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[20px]">spa</span>
+<div>
+<span class="font-label-lg text-label-lg font-bold block">حجامة علاجية ونبوية معقمة</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">تنقية الدم، تخفيف الصداع، آلام الظهر والمفاصل</span>
+</div>
+</div>
+<span class="check-icon w-6 h-6 rounded-full bg-primary-container text-on-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[16px]">check</span>
+</span>
+</button>
+<button class="service-chip flex items-center justify-between p-space-sm rounded-lg bg-surface-container text-on-surface-variant transition-all text-right group" data-service="physio" type="button">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[20px]">physical_therapy</span>
+<div>
+<span class="font-label-lg text-label-lg font-bold block text-on-surface">علاج طبيعي وتأهيل حركي</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">تمارين استعادة المدى الحركي وتقوية الأربطة</span>
+</div>
+</div>
+<span class="check-icon hidden w-6 h-6 rounded-full bg-primary-container text-on-primary items-center justify-center">
+<span class="material-symbols-outlined text-[16px]">check</span>
+</span>
+</button>
+<button class="service-chip flex items-center justify-between p-space-sm rounded-lg bg-surface-container text-on-surface-variant transition-all text-right group" data-service="spine" type="button">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[20px]">airline_seat_recline_normal</span>
+<div>
+<span class="font-label-lg text-label-lg font-bold block text-on-surface">علاج آلام الظهر وعرق النسا</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">تخفيف ضغط الفقرات وتسكين الأعصاب الملتهبة</span>
+</div>
+</div>
+<span class="check-icon hidden w-6 h-6 rounded-full bg-primary-container text-on-primary items-center justify-center">
+<span class="material-symbols-outlined text-[16px]">check</span>
+</span>
+</button>
+<button class="service-chip flex items-center justify-between p-space-sm rounded-lg bg-surface-container text-on-surface-variant transition-all text-right group" data-service="sports" type="button">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[20px]">fitness_center</span>
+<div>
+<span class="font-label-lg text-label-lg font-bold block text-on-surface">استشفاء وتأهيل رياضي مكثف</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">تفكيك الشد العضلي وتسريع استعادة النشاط</span>
+</div>
+</div>
+<span class="check-icon hidden w-6 h-6 rounded-full bg-primary-container text-on-primary items-center justify-center">
+<span class="material-symbols-outlined text-[16px]">check</span>
+</span>
+</button>
+</div>
+</div>
+<!-- Clinic Section / Gender Selection -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-md text-label-md text-on-surface font-semibold">2. اختيار القسم المناسب:</label>
+<div class="grid grid-cols-2 gap-space-xs" id="gender-selection">
+<button class="gender-btn active py-2.5 px-space-sm rounded-lg bg-primary-container text-on-primary flex items-center justify-center gap-2 font-label-md text-label-md transition-all" type="button">
+<span>قسم الرجال</span>
+<span class="text-base">👨</span>
+</button>
+<button class="gender-btn py-2.5 px-space-sm rounded-lg bg-surface-container text-on-surface-variant flex items-center justify-center gap-2 font-label-md text-label-md transition-all" type="button">
+<span>قسم السيدات (مستقل)</span>
+<span class="text-base">👩</span>
+</button>
+</div>
+<p class="font-body-sm text-body-sm text-secondary flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px]">lock</span>
+          خصوصية تامة، غرف منفصلة وطاقم علاجي نسائي متخصص للسيدات.
+        </p>
+</div>
+<!-- Form Inputs -->
+<div class="flex flex-col gap-space-sm">
+<label class="font-label-md text-label-md text-on-surface font-semibold">3. بيانات التواصل وموعد الحضور:</label>
+<div>
+<input class="w-full h-12 px-space-md rounded-lg bg-surface-container-lowest text-on-surface placeholder:text-outline text-body-md shadow-sm focus:outline-none focus:bg-surface-container-low transition-colors" id="patient-name" placeholder="الاسم الكريم بالكامل" type="text"/>
+</div>
+<div>
+<input class="w-full h-12 px-space-md rounded-lg bg-surface-container-lowest text-on-surface placeholder:text-outline text-body-md shadow-sm focus:outline-none focus:bg-surface-container-low transition-colors" dir="rtl" id="patient-phone" placeholder="رقم الهاتف الجوال (أو الواتساب)" type="tel"/>
+</div>
+<div class="grid grid-cols-2 gap-space-xs">
+<div>
+<select class="w-full h-12 px-space-sm rounded-lg bg-surface-container-lowest text-on-surface text-body-md shadow-sm focus:outline-none focus:bg-surface-container-low transition-colors" id="preferred-day">
+<option value="اليوم">اليوم (متاح حالياً)</option>
+<option value="غداً">غداً</option>
+<option value="بعد غد">بعد غد</option>
+<option value="تحديد لاحقاً">أقرب موعد ممكن</option>
+</select>
+</div>
+<div>
+<select class="w-full h-12 px-space-sm rounded-lg bg-surface-container-lowest text-on-surface text-body-md shadow-sm focus:outline-none focus:bg-surface-container-low transition-colors" id="preferred-shift">
+<option value="الفترة الصباحية (9ص - 1م)">صباحية (9ص - 1م)</option>
+<option selected="" value="الفترة المسائية (4م - 10م)">مسائية (4م - 10م)</option>
+</select>
+</div>
+</div>
+<div>
+<input class="w-full h-12 px-space-md rounded-lg bg-surface-container-lowest text-on-surface placeholder:text-outline text-body-md shadow-sm focus:outline-none focus:bg-surface-container-low transition-colors" id="patient-complaint" placeholder="ما هي الشكوى أو المنطقة التي تؤلمك؟ (اختياري)" type="text"/>
+</div>
+</div>
+<!-- Action Button -->
+<div class="flex flex-col gap-space-xs pt-space-xs">
+<button class="w-full h-12 bg-primary-container text-on-primary rounded-lg font-label-lg text-label-lg flex items-center justify-center gap-space-xs shadow-md hover:bg-primary transition-all" id="submit-booking" type="button">
+<span class="material-symbols-outlined text-[20px]">send</span>
+<span>تأكيد طلب الموعد عبر واتساب / الهاتف</span>
+</button>
+<div class="flex items-center justify-center gap-1.5 text-center text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px] text-tertiary">pace</span>
+<span>سيتم التواصل معك فورياً خلال أقل من 15 دقيقة لتأكيد الموعد</span>
+</div>
+</div>
+</div>
+</section>
+<!-- CORE CLINICAL SERVICES (BENTO / DUAL-TONE CARDS) -->
+<section class="px-margin mb-space-xl">
+<div class="flex flex-col items-start gap-1 mb-space-md">
+<span class="font-label-sm text-label-sm text-secondary font-bold">رعاية تخصصية شاملة</span>
+<h2 class="font-headline-sm text-headline-sm text-primary font-bold">خدماتنا العلاجية المعتمدة</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">نظام علاجي متكامل يدمج هدي الطب النبوي مع أسس التأهيل الحركي والفيزيائي الحديث.</p>
+</div>
+<div class="flex flex-col gap-space-md">
+<!-- Service 1 -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm flex flex-col">
+<div class="p-space-md flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="w-10 h-10 rounded-lg bg-surface-container-high text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">vaccines</span>
+</span>
+<span class="font-label-sm text-label-sm px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary-container font-semibold">الأكثر طلباً</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-primary font-bold">الحجامة الطبية والنبوية المعقمة</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            جلسات تشريط لطيف دقيق لتصريف الأخلاط الراكدة، تخفيف الصداع النصفي المزمن، خفض الشد التوتري، وتنشيط الدورة الدموية العميقة وفق أوقات السنة النبوية والأيام المستحبة.
+          </p>
+</div>
+<div class="bg-surface-container-low px-space-md py-space-sm flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-secondary">timer</span>
+<span>المدة: 35 - 45 دقيقة</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-secondary">verified</span>
+<span>كؤوس مفردة التعقيم</span>
+</div>
+</div>
+</div>
+<!-- Service 2 -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm flex flex-col">
+<div class="p-space-md flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="w-10 h-10 rounded-lg bg-surface-container-high text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">assist_walker</span>
+</span>
+<span class="font-label-sm text-label-sm px-2.5 py-1 rounded-full bg-surface-container text-on-surface font-semibold">تأهيل حركي</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-primary font-bold">العلاج الطبيعي وتأهيل القوام</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            برامج متقدمة وتمارين موجهة لعلاج خشونة المفاصل، آلام الرقبة وتشنج الأكتاف، وتصحيح انحناءات العمود الفقري واستعادة الاتزان العضلي.
+          </p>
+</div>
+<div class="bg-surface-container-low px-space-md py-space-sm flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-secondary">accessibility_new</span>
+<span>تمارين وتقويم يدوي</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-secondary">person_check</span>
+<span>أخصائي ملازم</span>
+</div>
+</div>
+</div>
+<!-- Service 3 -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm flex flex-col">
+<div class="p-space-md flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="w-10 h-10 rounded-lg bg-surface-container-high text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">sports_martial_arts</span>
+</span>
+<span class="font-label-sm text-label-sm px-2.5 py-1 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-semibold">استشفاء رياضي</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-primary font-bold">استشفاء وتأهيل الإصابات الرياضية</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            تقنيات التدليك العلاجي، الحجامة الجافة المتزحلقة، وتفكيك العقد والتليفات العضلية الناتجة عن المجهود البدني العالي لاستعادة المرونة التامة سريعاً.
+          </p>
+</div>
+<div class="bg-surface-container-low px-space-md py-space-sm flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-secondary">bolt</span>
+<span>تسريع التعافي</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-secondary">fitness_center</span>
+<span>للرياضيين والنشطين</span>
+</div>
+</div>
+</div>
+<!-- Service 4 -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm flex flex-col">
+<div class="p-space-md flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="w-10 h-10 rounded-lg bg-surface-container-high text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">healing</span>
+</span>
+<span class="font-label-sm text-label-sm px-2.5 py-1 rounded-full bg-surface-container text-on-surface font-semibold">علاج تلطيفي</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-primary font-bold">برنامج علاج الديسك وعرق النسا</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            بروتوكول مركب يخفف الضغط على جذور الأعصاب في الفقرات القطنية والعجزية، مما يزيل التنميل والألم الممتد في الساقين ويعيد الراحة اليومية.
+          </p>
+</div>
+<div class="bg-surface-container-low px-space-md py-space-sm flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-secondary">hotel</span>
+<span>تخفيف الضغط الغضروفي</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-secondary">favorite</span>
+<span>بدون ألم أو مشقة</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- STERILIZATION & SAFETY PROTOCOL -->
+<section class="px-margin mb-space-xl">
+<div class="bg-primary text-on-primary rounded-xl p-space-md shadow-lg flex flex-col gap-space-md relative overflow-hidden">
+<!-- Decorative background icon -->
+<span class="material-symbols-outlined absolute -left-8 -bottom-8 text-[140px] text-on-primary/5 pointer-events-none">sanitizer</span>
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[26px] text-primary-fixed">verified_user</span>
+<div>
+<span class="font-label-sm text-label-sm text-primary-fixed block">أعلى معايير السلامة الصحية</span>
+<h2 class="font-headline-sm text-headline-sm font-bold">بروتوكول الأمان والتعقيم الصارم</h2>
+</div>
+</div>
+<p class="font-body-md text-body-md text-surface-container-high leading-relaxed">
+        صحتكم أمانة؛ نطبق أدق المعايير الطبية المعتمدة لضمان تجربة علاجية آمنة بنسبة 100% تبعث على الطمأنينة الكاملة:
+      </p>
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-start gap-space-xs bg-primary-container/40 p-space-sm rounded-lg backdrop-blur-sm">
+<span class="material-symbols-outlined text-primary-fixed text-[22px] shrink-0 mt-0.5">delete_forever</span>
+<div>
+<h4 class="font-title-md text-title-md font-semibold text-surface-bright">أدوات استخدام فردي تُفتح أمامك</h4>
+<p class="font-body-sm text-body-sm text-surface-container-high leading-normal">
+              جميع كؤوس الحجامة، الشفرات الطبية، والقفازات مغلفة ومعقمة وتُتلف فور انتهاء الجلسة وفق معايير النفايات الطبية.
+            </p>
+</div>
+</div>
+<div class="flex items-start gap-space-xs bg-primary-container/40 p-space-sm rounded-lg backdrop-blur-sm">
+<span class="material-symbols-outlined text-primary-fixed text-[22px] shrink-0 mt-0.5">meeting_room</span>
+<div>
+<h4 class="font-title-md text-title-md font-semibold text-surface-bright">غرف خاصة معقمة وخصوصية كاملة</h4>
+<p class="font-body-sm text-body-sm text-surface-container-high leading-normal">
+              تعقيم مستمر للأسرة ومقابض الغرف بجهاز الأشعة والمنظفات الطبية بين كل مراجع وآخر لضمان نظافة فائقة.
+            </p>
+</div>
+</div>
+<div class="flex items-start gap-space-xs bg-primary-container/40 p-space-sm rounded-lg backdrop-blur-sm">
+<span class="material-symbols-outlined text-primary-fixed text-[22px] shrink-0 mt-0.5">badge</span>
+<div>
+<h4 class="font-title-md text-title-md font-semibold text-surface-bright">ممارسون صحيون مرخصون ومدربون</h4>
+<p class="font-body-sm text-body-sm text-surface-container-high leading-normal">
+              طاقم متمرس في التشريح وعلم وظائف الأعضاء، مدرب على التشريط السطحي الخفيف دون ألم أو ترك ندوب دائمة.
+            </p>
+</div>
+</div>
+</div>
+<div class="w-full h-32 rounded-lg overflow-hidden shadow-sm mt-space-xs">
+<img class="w-full h-full object-cover" data-alt="Modern high-standard medical sterilization autoclave tray in a healthcare clinic with individually sealed, single-use surgical cupping tools and clean green-tinted medical instruments demonstrating strict hygiene protocols." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBEWUYweRmqhs8bnZMQnAiDodkvGp9ZdyklTqOWc_mu0AC5dKjcIHyqn4-KMoIUtV5_InYUKtyDn-uS-RXfc80YUASPWfzKKI9yKag7CDvv_FybfHMuztXlvLVt07BzHoudzo-XS5aSpKEyPjWG2_XTK08N1TvI9_8mZaoc2B9b6T3f-WFfwIaVK95wc2leeHVkGoKeSsvpcRXj5-ZGOE4ZuwFIwcBRkGMNwS1VAI4"/>
+</div>
+</div>
+</section>
+<!-- SOCIAL PROOF & PATIENT TESTIMONIALS -->
+<section class="px-margin mb-space-xl">
+<div class="flex items-center justify-between mb-space-md">
+<div>
+<span class="font-label-sm text-label-sm text-secondary font-bold">تجارب وقصص شفاء</span>
+<h2 class="font-headline-sm text-headline-sm text-primary font-bold">ماذا يقول مراجعونا؟</h2>
+</div>
+<div class="flex items-center gap-1 bg-surface-container-low px-space-sm py-1.5 rounded-full">
+<span class="material-symbols-outlined text-tertiary-container text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-md text-label-md font-bold text-primary">4.9 / 5</span>
+</div>
+</div>
+<div class="flex flex-col gap-space-sm">
+<!-- Review 1 -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<div class="w-9 h-9 rounded-full bg-surface-container-high text-primary flex items-center justify-center font-bold font-label-md text-label-md">
+              أ.خ
+            </div>
+<div>
+<span class="font-title-md text-title-md font-bold block">أبو خالد الشمري</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">معاناة ديسك أسفل الظهر لـ 3 سنوات</span>
+</div>
+</div>
+<div class="flex text-tertiary">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+          "ما شاء الله تبارك الله، قمت بجلسة حجامة علاجية مدمجة مع تمارين استطالة للفقرات. شعرت بخفة فورية ونمت أول ليلة براحة تامة منذ شهور. النظافة عندهم تضاهي أكبر المستشفيات الخاصة."
+        </p>
+</div>
+<!-- Review 2 -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<div class="w-9 h-9 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center font-bold font-label-md text-label-md">
+              أم.س
+            </div>
+<div>
+<span class="font-title-md text-title-md font-bold block">أم سلطان</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">صداع نصفي وألم الأكتاف</span>
+</div>
+</div>
+<div class="flex text-tertiary">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+          "قسم النساء مريح جداً ومستقل تماماً. الدكتورة يدها خفيفة جداً وما حسيت بأي ألم في التشريط، والصداع النصفي خف بنسبة 90% من أول جلسة. شكراً لحسن التعامل والرقي."
+        </p>
+</div>
+<!-- Review 3 -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<div class="w-9 h-9 rounded-full bg-surface-container text-primary flex items-center justify-center font-bold font-label-md text-label-md">
+              ف.ع
+            </div>
+<div>
+<span class="font-title-md text-title-md font-bold block">فهد العنزي (رياضي)</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">استشفاء عضلي بعد ماراثون</span>
+</div>
+</div>
+<div class="flex text-tertiary">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+          "أفضل عيادة تجمع بين الحجامة الرياضية المتزحلقة والتمارين اليدوية. التصلب العضلي في الساقين اختفى ورجعت للتمرين في اليوم التالي بكل نشاط."
+        </p>
+</div>
+</div>
+</section>
+<!-- CLINIC LOCATION & WORKING HOURS -->
+<section class="px-margin mb-space-lg">
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-md">
+<div>
+<span class="font-label-sm text-label-sm text-secondary font-bold">موقعنا واستقبال المراجعين</span>
+<h2 class="font-title-lg text-title-lg text-primary font-bold">ساعات العمل وموقع العيادة</h2>
+</div>
+<!-- Working Hours Box -->
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">calendar_month</span>
+<span class="font-label-md text-label-md text-primary font-bold">السبت إلى الخميس:</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface-variant">9:00 ص – 10:00 م (متواصل)</span>
+</div>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">schedule</span>
+<span class="font-label-md text-label-md text-primary font-bold">يوم الجمعة:</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface-variant">2:00 م – 9:00 م</span>
+</div>
+</div>
+<!-- Map Display Container -->
+<div class="flex flex-col gap-space-xs">
+<div class="w-full h-44 bg-cover bg-center rounded-lg relative overflow-hidden shadow-inner flex items-end p-space-sm" data-alt="Google Maps satellite and stylized road map showing clinic location pin in a prominent accessible medical boulevard in Riyadh Saudi Arabia." data-location="Riyadh, Saudi Arabia" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCWys8ii9m71avcbgTXxVtcHm4XFrtbMmBl7gArxyqzprVnaxpaHf-4GK6VozkDQ8x5WqkvpLZp1pkHtcLQPq6mVp5G26TKx-AINufsACzMyCBxbxbZF_goomrp-KMOaJLVCRDFi4U8tKPARaHejQiD_v4D-4sBTu_tsD2WyDWSI-0EWcVI42ZgLPPJ8sGhT6waj9UYPfeKzO2CcQ_8LfFiVPrrnYIwU4Ao0JXRSH0')">
+<div class="bg-surface/90 backdrop-blur-md px-space-sm py-1.5 rounded-lg flex items-center gap-2 text-primary">
+<span class="material-symbols-outlined text-error text-[18px]">location_on</span>
+<span class="font-label-sm text-label-sm font-bold">حي النرجس، طريق عثمان بن عفان، الرياض</span>
+</div>
+</div>
+<a class="w-full h-11 bg-surface-container text-primary font-label-md text-label-md rounded-lg flex items-center justify-center gap-space-xs hover:bg-surface-container-high transition-colors" href="https://maps.google.com" target="_blank">
+<span class="material-symbols-outlined text-[18px]">near_me</span>
+<span>افتح الموقع عبر Google Maps</span>
+</a>
+</div>
+<!-- Quick Action Contacts -->
+<div class="grid grid-cols-2 gap-space-xs pt-space-xs">
+<a class="h-12 bg-surface-container text-primary rounded-lg flex items-center justify-center gap-2 font-label-md text-label-md hover:bg-surface-container-high transition-colors" href="tel:+966500000000">
+<span class="material-symbols-outlined text-[20px]">call</span>
+<span>اتصال هاتفي</span>
+</a>
+<a class="h-12 bg-secondary text-on-secondary rounded-lg flex items-center justify-center gap-2 font-label-md text-label-md hover:opacity-95 transition-opacity" href="https://wa.me/966500000000" target="_blank">
+<span class="material-symbols-outlined text-[20px]">chat</span>
+<span>استفسار واتساب</span>
+</a>
+</div>
+</div>
+</section>
+<!-- FAQS (EXPANDABLE DELIGHT ACCORDIONS) -->
+<section class="px-margin mb-space-xl">
+<div class="mb-space-sm">
+<span class="font-label-sm text-label-sm text-secondary font-bold">الأسئلة الشائعة</span>
+<h3 class="font-title-lg text-title-lg text-primary font-bold">كل ما تود معرفته قبل جلستك</h3>
+</div>
+<div class="flex flex-col gap-space-xs" id="faq-accordion">
+<div class="faq-item bg-surface-container-lowest rounded-lg overflow-hidden shadow-sm transition-all">
+<button class="faq-toggle w-full p-space-sm flex items-center justify-between text-right font-title-md text-title-md text-primary font-semibold" type="button">
+<span>هل الحجامة الطبية مؤلمة أو تترك علامات؟</span>
+<span class="material-symbols-outlined text-secondary transition-transform duration-200">expand_more</span>
+</button>
+<div class="faq-content hidden px-space-sm pb-space-sm font-body-md text-body-md text-on-surface-variant leading-relaxed">
+          التشريط لدينا سطحي جداً ومدروس (خدوش ميكروسكوبية خفيفة) دون ألم يذكر. وتختفي الآثار الدائرية اللطيفة تماماً خلال 3 إلى 7 أيام بإذن الله مع ترطيب زيت الحبة السوداء الطبيعي.
+        </div>
+</div>
+<div class="faq-item bg-surface-container-lowest rounded-lg overflow-hidden shadow-sm transition-all">
+<button class="faq-toggle w-full p-space-sm flex items-center justify-between text-right font-title-md text-title-md text-primary font-semibold" type="button">
+<span>ما هي تعليمات ما قبل الجلسة؟</span>
+<span class="material-symbols-outlined text-secondary transition-transform duration-200">expand_more</span>
+</button>
+<div class="faq-content hidden px-space-sm pb-space-sm font-body-md text-body-md text-on-surface-variant leading-relaxed">
+          يُفضل الصيام عن الطعام الثابت قبل الجلسة بساعتين إلى 3 ساعات، وشرب كميات كافية من الماء، وتجنب التدخين والمجهود العضلي الشاق قبل الموعد بساعة.
+        </div>
+</div>
+<div class="faq-item bg-surface-container-lowest rounded-lg overflow-hidden shadow-sm transition-all">
+<button class="faq-toggle w-full p-space-sm flex items-center justify-between text-right font-title-md text-title-md text-primary font-semibold" type="button">
+<span>هل يوجد كادر نسائي لخدمة السيدات؟</span>
+<span class="material-symbols-outlined text-secondary transition-transform duration-200">expand_more</span>
+</button>
+<div class="faq-content hidden px-space-sm pb-space-sm font-body-md text-body-md text-on-surface-variant leading-relaxed">
+          نعم بالتأكيد، خصصنا قسماً مستقلاً بالكامل بكادر نسائي مؤهل من أخصائيات علاج طبيعي وحجامة مرخصات لضمان كامل الراحة والخصوصية.
+        </div>
+</div>
+</div>
+</section>
+</div>
+<script>
+  // Service selection interactive state
+  const serviceChips = document.querySelectorAll('.service-chip');
+  serviceChips.forEach(chip => {
+    chip.addEventListener('click', () => {
+      serviceChips.forEach(c => {
+        c.classList.remove('active', 'bg-surface-container-low', 'text-primary');
+        c.classList.add('bg-surface-container', 'text-on-surface-variant');
+        const check = c.querySelector('.check-icon');
+        if (check) {
+          check.classList.add('hidden');
+          check.classList.remove('flex');
+        }
+      });
+      chip.classList.add('active', 'bg-surface-container-low', 'text-primary');
+      chip.classList.remove('bg-surface-container', 'text-on-surface-variant');
+      const activeCheck = chip.querySelector('.check-icon');
+      if (activeCheck) {
+        activeCheck.classList.remove('hidden');
+        activeCheck.classList.add('flex');
+      }
+    });
+  });
+
+  // Gender toggle buttons
+  const genderBtns = document.querySelectorAll('.gender-btn');
+  genderBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      genderBtns.forEach(b => {
+        b.classList.remove('active', 'bg-primary-container', 'text-on-primary');
+        b.classList.add('bg-surface-container', 'text-on-surface-variant');
+      });
+      btn.classList.add('active', 'bg-primary-container', 'text-on-primary');
+      btn.classList.remove('bg-surface-container', 'text-on-surface-variant');
+    });
+  });
+
+  // WhatsApp Interactive Direct Action trigger
+  const submitBtn = document.getElementById('submit-booking');
+  if (submitBtn) {
+    submitBtn.addEventListener('click', () => {
+      const activeServiceEl = document.querySelector('.service-chip.active span');
+      const serviceName = activeServiceEl ? activeServiceEl.innerText.trim() : 'حجامة وعلاج طبيعي';
+      const activeGenderEl = document.querySelector('.gender-btn.active');
+      const genderName = activeGenderEl ? activeGenderEl.innerText.trim() : 'قسم الرجال';
+      const patientName = document.getElementById('patient-name').value.trim() || 'مراجع كريم';
+      const patientPhone = document.getElementById('patient-phone').value.trim() || 'غير محدد';
+      const day = document.getElementById('preferred-day').value;
+      const shift = document.getElementById('preferred-shift').value;
+      const complaint = document.getElementById('patient-complaint').value.trim();
+
+      let text = `السلام عليكم ورحمة الله، أود طلب حجز موعد في عيادة الزهراء:\n`;
+      text += `• الاسم: ${patientName}\n`;
+      text += `• الجوال: ${patientPhone}\n`;
+      text += `• الخدمة: ${serviceName}\n`;
+      text += `• القسم: ${genderName}\n`;
+      text += `• الموعد المفضل: ${day} - ${shift}\n`;
+      if (complaint) {
+        text += `• تفاصيل الشكوى: ${complaint}\n`;
+      }
+
+      const encoded = encodeURIComponent(text);
+      window.open(`https://wa.me/966500000000?text=${encoded}`, '_blank');
+    });
+  }
+
+  // FAQ Accordion interactive toggling
+  const faqToggles = document.querySelectorAll('.faq-toggle');
+  faqToggles.forEach(toggle => {
+    toggle.addEventListener('click', () => {
+      const content = toggle.nextElementSibling;
+      const icon = toggle.querySelector('.material-symbols-outlined');
+      const isHidden = content.classList.contains('hidden');
+      
+      document.querySelectorAll('.faq-content').forEach(c => c.classList.add('hidden'));
+      document.querySelectorAll('.faq-toggle .material-symbols-outlined').forEach(i => i.style.transform = 'rotate(0deg)');
+
+      if (isHidden) {
+        content.classList.remove('hidden');
+        if (icon) icon.style.transform = 'rotate(180deg)';
+      }
+    });
+  });
+</script></main><aside class="fixed bottom-20 inset-x-0 z-40 px-margin pointer-events-none"><div class="pointer-events-auto bg-surface-container-lowest/95 backdrop-blur-xl rounded-xl p-space-xs shadow-[0_12px_36px_-4px_rgba(15,91,75,0.12)] flex items-center justify-between gap-space-sm"><a class="flex-1 h-12 bg-primary-container text-on-primary rounded-lg flex items-center justify-center gap-space-xs font-label-lg text-label-lg transition-colors hover:bg-primary shadow-[0_4px_20px_-2px_rgba(15,91,75,0.15)]" data-path="booking-screen" href="booking.html"><span class="material-symbols-outlined text-[20px]">calendar_month</span><span>احجز موعدك الآن</span></a><a class="h-12 px-space-md bg-surface-container text-secondary rounded-lg flex items-center justify-center gap-space-xs font-label-md text-label-md transition-colors hover:bg-surface-container-high" href="https://wa.me/966500000000" target="_blank"><span class="material-symbols-outlined text-[20px]">support_agent</span><span>واتساب فوري</span></a></div></aside><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/85 backdrop-blur-xl shadow-[0_-2px_12px_rgba(0,0,0,0.03)]" data-active-classes="text-primary font-bold"><div class="flex justify-around items-center h-16 px-space-xs"><a aria-current="page" class="flex flex-col items-center justify-center gap-space-xs min-h-[44px] min-w-[44px] transition-colors text-primary font-bold" data-path="clinic-landing" href="index.html"><span class="material-symbols-outlined text-[22px]">local_hospital</span><span class="font-label-sm text-label-sm">الرئيسية</span></a><a class="flex flex-col items-center justify-center gap-space-xs min-h-[44px] min-w-[44px] text-on-surface-variant transition-colors hover:text-on-surface" data-path="medical-services" href="index.html#services"><span class="material-symbols-outlined text-[22px]">medical_services</span><span class="font-label-sm text-label-sm">خدماتنا</span></a><a class="flex flex-col items-center justify-center gap-space-xs min-h-[44px] min-w-[44px] text-on-surface-variant transition-colors hover:text-on-surface" data-path="sterile-standards" href="index.html#safety"><span class="material-symbols-outlined text-[22px]">verified</span><span class="font-label-sm text-label-sm">التعقيم</span></a><a class="flex flex-col items-center justify-center gap-space-xs min-h-[44px] min-w-[44px] text-on-surface-variant transition-colors hover:text-on-surface" data-path="patient-reviews" href="index.html#testimonials"><span class="material-symbols-outlined text-[22px]">hotel_class</span><span class="font-label-sm text-label-sm">الآراء</span></a></div></nav>
+<!-- Floating Notification Toast -->
+<div id="firebase-toast" class="fixed bottom-6 left-1/2 -translate-x-1/2 z-[9999] hidden flex items-center gap-3 px-6 py-3.5 rounded-2xl shadow-2xl bg-gray-900/95 text-white backdrop-blur-md border border-white/10 transition-all duration-300">
+  <span class="material-symbols-outlined text-emerald-400 text-2xl" id="firebase-toast-icon">check_circle</span>
+  <span id="firebase-toast-msg" class="text-sm font-semibold">تم الحفظ بنجاح</span>
+</div>
+
+<!-- Firebase Modular Integration (SDK v13.4.0) -->
+<script type="module">
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/13.4.0/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/13.4.0/firebase-analytics.js";
+  import { getAuth, onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/13.4.0/firebase-auth.js";
+  import { getFirestore, collection, addDoc, serverTimestamp, getDocs, query, orderBy, limit } from "https://www.gstatic.com/firebasejs/13.4.0/firebase-firestore.js";
+
+  const firebaseConfig = {
+  "apiKey": "AIzaSyAv6oY8WcrQr6gw5TYPJRIvVddEiQsZ_tc",
+  "authDomain": "jamal-5de2c.firebaseapp.com",
+  "projectId": "jamal-5de2c",
+  "storageBucket": "jamal-5de2c.firebasestorage.app",
+  "messagingSenderId": "220790414446",
+  "appId": "1:220790414446:web:7bec45ab14f04ac216da7f",
+  "measurementId": "G-7DLDSPM512"
+};
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  let analytics = null;
+  try {
+    analytics = getAnalytics(app);
+  } catch(e) {
+    console.log("Analytics note:", e);
+  }
+  const auth = getAuth(app);
+  const db = getFirestore(app);
+
+  // Expose to window for UI handlers
+  window.FirebaseApp = { app, analytics, auth, db, collection, addDoc, serverTimestamp, signOut };
+
+  // Toast notification helper
+  window.showToast = function(message, type = 'success') {
+    const toast = document.getElementById('firebase-toast');
+    const msgEl = document.getElementById('firebase-toast-msg');
+    const iconEl = document.getElementById('firebase-toast-icon');
+    if (!toast || !msgEl) {
+      alert(message);
+      return;
+    }
+    msgEl.textContent = message;
+    if (type === 'error') {
+      iconEl.textContent = 'error';
+      iconEl.className = 'material-symbols-outlined text-rose-400 text-2xl';
+    } else {
+      iconEl.textContent = 'check_circle';
+      iconEl.className = 'material-symbols-outlined text-emerald-400 text-2xl';
+    }
+    toast.classList.remove('hidden');
+    toast.classList.remove('opacity-0');
+    toast.classList.add('opacity-100');
+    setTimeout(() => {
+      toast.classList.add('opacity-0');
+      setTimeout(() => toast.classList.add('hidden'), 300);
+    }, 4000);
+  };
+
+  // Auth State Listener
+  onAuthStateChanged(auth, (user) => {
+    const userBadge = document.getElementById('user-auth-badge');
+    if (userBadge) {
+      if (user) {
+        userBadge.innerHTML = `
+          <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-600 text-xs font-bold">
+            <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+            ${user.email || 'مستخدم مسجل'}
+          </span>
+        `;
+      }
+    }
+  });
+
+  
+    document.addEventListener('DOMContentLoaded', () => {
+      const sendBtn = Array.from(document.querySelectorAll('button')).find(b => b.textContent.includes('إرسال') || b.textContent.includes('حجز') || b.textContent.includes('طلب'));
+      if (sendBtn) {
+        sendBtn.addEventListener('click', async (e) => {
+          try {
+            const inputs = document.querySelectorAll('input, textarea');
+            const data = {};
+            inputs.forEach(inp => { if (inp.id || inp.name) data[inp.id || inp.name] = inp.value; });
+            const { db, collection, addDoc, serverTimestamp } = window.FirebaseApp;
+            await addDoc(collection(db, 'messages'), {
+              ...data,
+              timestamp: serverTimestamp()
+            });
+            window.showToast('تم إرسال طلبك وحفظه في Firebase!');
+          } catch(err) {
+            console.log(err);
+          }
+        });
+      }
+    });
+  
+</script>
+</body></html>
